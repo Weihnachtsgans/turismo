@@ -38,6 +38,10 @@ public class Residencia extends Model{
         parameters.add(rif);
         parameters.add(dir);
         ResultSet rs = Residencia.executeSelectQuery(SQL,parameters,c);
+        if(!rs.isBeforeFirst()){
+            throw new SQLException("Coincidence not found");
+        }
+        rs.next();
         return new Residencia(
                 rs.getString("rif_resid"),
                 rs.getString("direccion_r"),

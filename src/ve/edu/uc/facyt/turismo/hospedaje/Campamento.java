@@ -44,6 +44,10 @@ public class Campamento extends Model{
         List<Object> parameters = new ArrayList<>();
         parameters.add(rif);
         ResultSet rs = Campamento.executeSelectQuery(SQL,parameters,c);
+        if(!rs.isBeforeFirst()){
+            throw new SQLException("Coincidence not found");
+        }
+        rs.next();
         return new Campamento(rs.getString("rif_camp"),rs.getInt("capacidad"),rs.getInt("precio"),rs.getBoolean("servicio_campamento"),false);
     }
 

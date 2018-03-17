@@ -43,7 +43,7 @@ public class Turismo {
         Turismo app = new Turismo("eien","tempPassword","turismo","localhost","5432");
         Connection conn = app.connect();
         try {
-            Cliente c = Cliente.find(conn,"temp_user");
+            Cliente c = Cliente.find(conn,"temp_user1");
             c.setNombre_c("Ronaldo");
             c.save(conn);
         }

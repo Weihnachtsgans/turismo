@@ -53,8 +53,10 @@ public class Cliente extends Model{
         List<Object> parameters = new ArrayList<>();
         parameters.add(usuario);
         ResultSet rs = Cliente.executeSelectQuery(SQL,parameters,c);
+        if(!rs.isBeforeFirst()){
+            throw new SQLException("Coincidence not found");
+        }
         rs.next();
-
         return new Cliente(
                 rs.getString("id_cliente"),
                 rs.getString("usuario"),

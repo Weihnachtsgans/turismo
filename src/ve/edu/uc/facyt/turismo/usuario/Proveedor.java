@@ -85,6 +85,10 @@ public class Proveedor extends Model{
         List<Object> parameters = new ArrayList<>();
         parameters.add(idProveedor);
         ResultSet rs = Proveedor.executeSelectQuery(SQL,parameters,c);
+        if(!rs.isBeforeFirst()){
+            throw new SQLException("Coincidence not found");
+        }
+        rs.next();
         return new Proveedor(
                 rs.getString("id_proveedor"),
                 rs.getString("usuario"),

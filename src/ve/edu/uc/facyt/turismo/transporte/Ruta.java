@@ -47,6 +47,10 @@ public class Ruta extends Model{
         List<Object> parameters = new ArrayList<>();
         parameters.add(idRuta);
         ResultSet rs = Ruta.executeSelectQuery(SQL,parameters,c);
+        if(!rs.isBeforeFirst()){
+            throw new SQLException("Coincidence not found");
+        }
+        rs.next();
         return new Ruta(
                 rs.getString("id_r"),
                 rs.getString("origen"),
