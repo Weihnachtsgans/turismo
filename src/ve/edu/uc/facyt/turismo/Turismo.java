@@ -9,9 +9,39 @@ import ve.edu.uc.facyt.turismo.hospedaje.Posada;
 import ve.edu.uc.facyt.turismo.hospedaje.Hospedaje;
 import ve.edu.uc.facyt.turismo.hospedaje.Campamento;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 public class Turismo {
+    private String dbUser;
+    private String dbPassword;
+    private String dbName;
+    private String dbHost;
+    private String dbPort;
+
+    public Turismo(String dbUser, String dbPassword, String dbName, String dbHost, String dbPort) {
+        this.dbUser = dbUser;
+        this.dbPassword = dbPassword;
+        this.dbName = dbName;
+        this.dbHost = dbHost;
+        this.dbPort = dbPort;
+    }
+
+    private Connection connect(){
+        String connString = String.format("jdbc:postgresql://%s:%s/%s",dbHost,dbPort,dbName);
+        Connection conn = null;
+        try {
+            conn = DriverManager.getConnection(connString,dbUser,dbPassword);
+        } catch (SQLException sqlE){
+            System.out.println(sqlE.toString());
+        }
+        return conn;
+    }
     public static void main(String[] args){
-        System.out.println("Hello world");
+        Turismo app = new Turismo("eien","kaiSah3shenan2tieboh","turismo","localhost","5432");
+        Connection conn = app.connect();
+
     }
 }

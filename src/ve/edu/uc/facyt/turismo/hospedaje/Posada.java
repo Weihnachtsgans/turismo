@@ -1,30 +1,39 @@
 package ve.edu.uc.facyt.turismo.hospedaje;
 
-import java.util.Date;
+import java.sql.*;
+import ve.edu.uc.facyt.turismo.Model;
 
-public class Posada{
+public class Posada extends Model{
     private String rif;
-    private String codigo;
+    private Integer calidad;
     private float precio;
-    private String direccion;
-    private Date fechaInicio;
-    private Date fechaFinal;
+    private Integer servicioP;
+    private Integer habitaciones;
+    private boolean isNew = true;
 
-    public Posada(String rif, String codigo, float precio, String direccion, Date fechaInicio, Date fechaFinal) {
-        this.rif = rif;
-        this.codigo = codigo;
-        this.precio = precio;
-        this.direccion = direccion;
-        this.fechaInicio = fechaInicio;
-        this.fechaFinal = fechaFinal;
+    public Posada() {
+        this.rif = null;
+        this.calidad = null;
+        this.precio = 0;
+        this.servicioP = null;
+        this.habitaciones = null;
     }
-    public Posada(){
-        rif = null;
-        codigo = null;
-        precio = 0;
-        direccion = null;
-        fechaInicio = null;
-        fechaFinal = null;
+
+    public Posada(String rif, Integer calidad, float precio, Integer servicioP, Integer habitaciones) {
+        this.rif = rif;
+        this.calidad = calidad;
+        this.precio = precio;
+        this.servicioP = servicioP;
+        this.habitaciones = habitaciones;
+    }
+
+    private Posada(String rif, Integer calidad, float precio, Integer servicioP, Integer habitaciones, boolean isNew) {
+        this.rif = rif;
+        this.calidad = calidad;
+        this.precio = precio;
+        this.servicioP = servicioP;
+        this.habitaciones = habitaciones;
+        this.isNew = isNew;
     }
 
     public String getRif() {
@@ -35,12 +44,12 @@ public class Posada{
         this.rif = rif;
     }
 
-    public String getCodigo() {
-        return codigo;
+    public Integer getCalidad() {
+        return calidad;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setCalidad(Integer calidad) {
+        this.calidad = calidad;
     }
 
     public float getPrecio() {
@@ -51,31 +60,32 @@ public class Posada{
         this.precio = precio;
     }
 
-    public String getDireccion() {
-        return direccion;
+    public Integer getServicioP() {
+        return servicioP;
     }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
+    public void setServicioP(Integer servicioP) {
+        this.servicioP = servicioP;
     }
 
-    public Date getFechaInicio() {
-        return fechaInicio;
+    public Integer getHabitaciones() {
+        return habitaciones;
     }
 
-    public void setFechaInicio(Date fechaInicio) {
-        this.fechaInicio = fechaInicio;
+    public void setHabitaciones(Integer habitaciones) {
+        this.habitaciones = habitaciones;
     }
 
-    public Date getFechaFinal() {
-        return fechaFinal;
-    }
+    public boolean save(Connection c) throws SQLException{
+        String SQL;
+        if(isNew){
+            SQL = "INSERT INTO posada(calidad,servicioP,precio,habitaciones,rif_posada) VALUES (?,?,?,?,?)";
+        }
+        else{
+            SQL = "UPDATE posada SET calidad=?,servicioP=?,precio=?,habitaciones=? WHERE rif_posada=?";
+        }
+        PreparedStatement stmt = c.prepareStatement(SQL);
 
-    public void setFechaFinal(Date fechaFinal) {
-        this.fechaFinal = fechaFinal;
-    }
-
-    public boolean save(){
-        return true;
+        return stmt.executeUpdate() > 0;
     }
 }

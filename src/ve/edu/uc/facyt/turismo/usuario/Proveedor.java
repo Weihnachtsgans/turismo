@@ -1,18 +1,21 @@
 package ve.edu.uc.facyt.turismo.usuario;
 
-public class Proveedor {
+import java.sql.*;
+import ve.edu.uc.facyt.turismo.Model;
+import ve.edu.uc.facyt.turismo.usuario.Cliente;
+
+
+public class Proveedor extends Cliente{
+    /*
     private String nombre;
     private String apellido;
     private String usuario;
     private String password;
     private String nacionalidad;
+    private Boolean isAdmin;
+    private boolean isNew = true;
 
-    /*
-    public static Cliente find(String nombre);
-    public static Cliente find(String nombre,String Apellido);
-    public static Cliente find(String usuario,String password);
-    public static Cliente find(String nombre,String Apellido,String usuario,String password,String nacionalidad);
-    */
+
 
     public Proveedor(String nombre, String apellido, String usuario, String password, String nacionalidad) {
         this.nombre = nombre;
@@ -28,6 +31,15 @@ public class Proveedor {
         usuario = null;
         password = null;
         nacionalidad = null;
+    }
+
+    private Proveedor(String nombre, String apellido, String usuario, String password, String nacionalidad, boolean isNew) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.usuario = usuario;
+        this.password = password;
+        this.nacionalidad = nacionalidad;
+        this.isNew = isNew;
     }
 
     public String getNombre() {
@@ -77,8 +89,36 @@ public class Proveedor {
     public void setPassword(String password) {
         this.password = password;
     }
-    public boolean save(){
-        //Save into db
-        return true;
-    }
+    public boolean save(Connection c) throws SQLException{
+        /*
+        String SQL;
+
+        //Si es un nuevo elemento, insertar, sino, actualizar. De esta forma, es posible usar el método tanto si es un objeto nuevo
+        //como si es uno ya ubicado
+        if(isNew){
+            SQL = "INSERT INTO clientes(nombre,apellido,usuario,contraseña,es_admin) VALUES (?,?,?,?,?)";
+        }
+        else{
+            SQL = "UPDATE clientes SET nombre=?,apellido=?,contraseña=?,es_admin=? WHERE usuario=?";
+        }
+
+        //Preparar la query, usando un prepared statement, para evitar inyecciones sql
+        PreparedStatement stmt;
+
+        stmt = c.prepareStatement(SQL);
+        stmt.setString(1,nombre);
+        stmt.setString(2,apellido);
+        if(isNew){
+            stmt.setString(3,usuario);
+            stmt.setString(4,password);
+            stmt.setBoolean(5,isAdmin);
+        }
+        else{
+            stmt.setString(3,password);
+            stmt.setBoolean(4,isAdmin);
+            stmt.setString(5,usuario);
+        }
+
+        return stmt.executeUpdate() > 0;
+    }*/
 }
