@@ -12,7 +12,7 @@ import ve.edu.uc.facyt.turismo.hospedaje.Campamento;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Statement;
+
 
 public class Turismo {
     private String dbUser;
@@ -40,7 +40,7 @@ public class Turismo {
         return conn;
     }
     public static void main(String[] args){
-        Turismo app = new Turismo("eien","","turismo","localhost","5432");
+        Turismo app = new Turismo("eien","tempPassword","turismo","localhost","5432");
         Connection conn = app.connect();
 
     }

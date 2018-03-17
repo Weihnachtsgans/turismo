@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceb38e78-bbd5-429a-9d3c-e4dc574aa192" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/Turismo.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/hospedaje/Campamento.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/hospedaje/Posada.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/hospedaje/Residencia.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/transporte/Ruta.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/usuario/Cliente.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/usuario/Proveedor.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java" afterPath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java" />
-      <change beforePath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Campamento.java" afterPath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Campamento.java" />
-      <change beforePath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/transporte/Ruta.java" afterPath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/transporte/Ruta.java" />
-      <change beforePath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Cliente.java" afterPath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Cliente.java" />
-      <change beforePath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Proveedor.java" afterPath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Proveedor.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +29,8 @@
       <file leaf-file-name="Turismo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+            <state relative-caret-position="482">
+              <caret line="42" column="76" lean-forward="false" selection-start-line="42" selection-start-column="76" selection-end-line="42" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -514,15 +503,15 @@
       <workItem from="1520896039633" duration="6023000" />
       <workItem from="1520957771480" duration="49000" />
       <workItem from="1521239914228" duration="14146000" />
-      <workItem from="1521299425106" duration="3522000" />
+      <workItem from="1521299425106" duration="3713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50446000" />
+    <option name="totallyTimeSpent" value="50637000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="2" width="1360" height="390" extended-state="6" />
+    <frame x="3" y="2" width="1360" height="763" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1781,8 +1770,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+        <state relative-caret-position="482">
+          <caret line="42" column="76" lean-forward="false" selection-start-line="42" selection-start-column="76" selection-end-line="42" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
