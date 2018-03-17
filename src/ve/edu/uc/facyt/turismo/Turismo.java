@@ -44,6 +44,8 @@ public class Turismo {
         Connection conn = app.connect();
         try {
             Cliente c = Cliente.find(conn,"temp_user");
+            c.setNombre_c("Ronaldo");
+            c.save(conn);
         }
         catch (Exception e){
             System.out.println(e.toString());

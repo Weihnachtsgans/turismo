@@ -79,7 +79,7 @@ public class Cliente extends Model{
             SQL = "INSERT INTO cliente(usuario,ciudad,clave,estado,nacionalidad,nombre_c,edo_civil,id_cliente) VALUES (?,?,?,?,?,?)";
         }
         else{
-            SQL = "UPDATE cliente SET usuario,ciudad,clave,estado,nacionalidad,nombre_c,edo_civil WHERE id_cliente=?";
+            SQL = "UPDATE cliente SET usuario=?,ciudad=?,clave=?,estado=?,nacionalidad=?,nombre_c=?,edo_civil=? WHERE id_cliente=?";
         }
 
         //Añadir los parámetros
@@ -91,6 +91,7 @@ public class Cliente extends Model{
         parameters.add(nacionalidad);
         parameters.add(nombre_c);
         parameters.add(edo_civil);
+        parameters.add(idCliente);
         return Cliente.executePostQuery(SQL,parameters,c);
     }
 
