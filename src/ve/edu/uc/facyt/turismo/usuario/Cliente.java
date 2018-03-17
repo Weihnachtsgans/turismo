@@ -78,7 +78,7 @@ public class Cliente extends Model{
         //Si es un nuevo elemento, insertar, sino, actualizar. De esta forma, es posible usar el método tanto si es un objeto nuevo
         //como si es uno ya ubicado
         if(isNew){
-            SQL = "INSERT INTO cliente(usuario,ciudad,clave,estado,nacionalidad,nombre_c,edo_civil,id_cliente) VALUES (?,?,?,?,?,?)";
+            SQL = "INSERT INTO cliente(usuario,ciudad,clave,estado,nacionalidad,nombre_c,edo_civil,id_cliente) VALUES (?,?,?,?,?,?,?,?)";
         }
         else{
             SQL = "UPDATE cliente SET usuario=?,ciudad=?,clave=?,estado=?,nacionalidad=?,nombre_c=?,edo_civil=? WHERE id_cliente=?";

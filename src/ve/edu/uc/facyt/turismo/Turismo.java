@@ -43,9 +43,9 @@ public class Turismo {
         Turismo app = new Turismo("eien","tempPassword","turismo","localhost","5432");
         Connection conn = app.connect();
         try {
-            Cliente c = Cliente.find(conn,"temp_user1");
-            c.setNombre_c("Ronaldo");
+            Cliente c = new Cliente("abc","user2","ciudad","such pasword","ninguno","Venezolana","Wot","Soltero",false);
             c.save(conn);
+
         }
         catch (Exception e){
             System.out.println(e.toString());
