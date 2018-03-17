@@ -64,11 +64,11 @@ public class Cliente extends Model{
         Integer idCliente = rs.getInt("id_cliente");
         String nombre = rs.getString("nombre");
         String apellido = rs.getString("apellido");
-        String usuario = rs.getString("usuario");
+        String user = rs.getString("usuario");
         String password = rs.getString("constraseña");
         String nacionalidad = rs.getString("nacionalidad");
         Boolean isAdmin = rs.getBoolean("es_admin");
-        return new Cliente(idCliente,nombre,apellido,usuario,password,nacionalidad,isAdmin,false);
+        return new Cliente(idCliente,nombre,apellido,user,password,nacionalidad,isAdmin,false);
 
     }
 

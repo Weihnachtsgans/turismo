@@ -40,7 +40,7 @@ public class Turismo {
         return conn;
     }
     public static void main(String[] args){
-        Turismo app = new Turismo("eien","kaiSah3shenan2tieboh","turismo","localhost","5432");
+        Turismo app = new Turismo("eien","","turismo","localhost","5432");
         Connection conn = app.connect();
 
     }

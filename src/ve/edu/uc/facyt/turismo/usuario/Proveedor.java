@@ -60,7 +60,7 @@ public class Proveedor extends Model{
     public boolean save(Connection c) throws SQLException {
         String SQL;
         if(isNew){
-            SQL = "INSERT INTO proveedor(usuario,ciudad,clave,estado,nacionalidad,nombre_p,pais_origen,direccion_R,edo_civil,id_proveedor) VALUES (?,?,?,?,?,?,?,?,?,?)"
+            SQL = "INSERT INTO proveedor(usuario,ciudad,clave,estado,nacionalidad,nombre_p,pais_origen,direccion_R,edo_civil,id_proveedor) VALUES (?,?,?,?,?,?,?,?,?,?)";
         }
         else{
             SQL = "UPDATE proveedor SET usuario=?, ciudad=?, clave=?, estado=?, nacionalidad=?, nombre_p=?, pais_origen=?, direccion_R=?, edo_civil=? WHERE id_proveedor=?";

@@ -44,7 +44,7 @@ public class Campamento extends Model{
         List<Object> parameters = new ArrayList<>();
         parameters.add(rif);
         ResultSet rs = Campamento.executeSelectQuery(SQL,parameters,c);
-        return new Campamento(rs.getString("rif_camp"),rs.getLong("capacidad"),rs.getInt("precio"),rs.getBoolean("servicio_campamento"),false);
+        return new Campamento(rs.getString("rif_camp"),rs.getInt("capacidad"),rs.getInt("precio"),rs.getBoolean("servicio_campamento"),false);
     }
 
 
