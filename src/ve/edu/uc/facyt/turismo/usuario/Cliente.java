@@ -7,86 +7,100 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cliente extends Model{
-    private Integer idCliente;
-    private String nombre;
-    private String apellido;
+    private String idCliente;
     private String usuario;
-    private String password;
+    private String ciudad;
+    private String clave;
+    private String estado;
     private String nacionalidad;
+    private String nombre_c;
+    private String edo_civil;
     private boolean isAdmin;
     private boolean isNew = true;
 
-    /*
-    public static Cliente find(String nombre);
-    public static Cliente find(String nombre,String Apellido);
-    public static Cliente find(String usuario,String password);
-    public static Cliente find(String nombre,String Apellido,String usuario,String password,String nacionalidad);
-    */
+    public Cliente() {
+    }
 
-    public Cliente(Integer idCliente,String nombre, String apellido, String usuario, String password, String nacionalidad, boolean isAdmin) {
+    public Cliente(String idCliente, String usuario, String ciudad, String clave, String estado, String nacionalidad, String nombre_c, String edo_civil, boolean isAdmin) {
         this.idCliente = idCliente;
-        this.nombre = nombre;
-        this.apellido = apellido;
         this.usuario = usuario;
-        this.password = password;
+        this.ciudad = ciudad;
+        this.clave = clave;
+        this.estado = estado;
         this.nacionalidad = nacionalidad;
+        this.nombre_c = nombre_c;
+        this.edo_civil = edo_civil;
         this.isAdmin = isAdmin;
     }
 
-    public Cliente() {
-        idCliente = null;
-        nombre = null;
-        apellido = null;
-        usuario = null;
-        password = null;
-        nacionalidad = null;
-        isAdmin = false;
-    }
-
-    private Cliente(Integer idCliente,String nombre, String apellido, String usuario, String password, String nacionalidad, boolean isAdmin, boolean isNew) {
+    private Cliente(String idCliente, String usuario, String ciudad, String clave, String estado, String nacionalidad, String nombre_c, String edo_civil, boolean isAdmin, boolean isNew) {
         this.idCliente = idCliente;
-        this.nombre = nombre;
-        this.apellido = apellido;
         this.usuario = usuario;
-        this.password = password;
+        this.ciudad = ciudad;
+        this.clave = clave;
+        this.estado = estado;
         this.nacionalidad = nacionalidad;
+        this.nombre_c = nombre_c;
+        this.edo_civil = edo_civil;
         this.isAdmin = isAdmin;
         this.isNew = isNew;
     }
 
+
     public static Cliente find(Connection c,String usuario) throws SQLException{
         //Query
-        String SQL = "SELECT * FROM clientes WHERE usuario=?";
+        String SQL = "SELECT * FROM cliente WHERE usuario=?";
         List<Object> parameters = new ArrayList<>();
         parameters.add(usuario);
         ResultSet rs = Cliente.executeSelectQuery(SQL,parameters,c);
+        rs.next();
 
-        Integer idCliente = rs.getInt("id_cliente");
-        String nombre = rs.getString("nombre");
-        String apellido = rs.getString("apellido");
-        String user = rs.getString("usuario");
-        String password = rs.getString("constraseña");
-        String nacionalidad = rs.getString("nacionalidad");
-        Boolean isAdmin = rs.getBoolean("es_admin");
-        return new Cliente(idCliente,nombre,apellido,user,password,nacionalidad,isAdmin,false);
+        return new Cliente(
+                rs.getString("id_cliente"),
+                rs.getString("usuario"),
+                rs.getString("ciudad"),
+                rs.getString("clave"),
+                rs.getString("estado"),
+                rs.getString("nacionalidad"),
+                rs.getString("nombre_c"),
+                rs.getString("edo_civil"),
+                false,
+                false
+        );
 
     }
 
+    public boolean save(Connection c) throws SQLException{
+        String SQL;
 
-    public String getNombre() {
-        return nombre;
+        //Si es un nuevo elemento, insertar, sino, actualizar. De esta forma, es posible usar el método tanto si es un objeto nuevo
+        //como si es uno ya ubicado
+        if(isNew){
+            SQL = "INSERT INTO cliente(usuario,ciudad,clave,estado,nacionalidad,nombre_c,edo_civil,id_cliente) VALUES (?,?,?,?,?,?)";
+        }
+        else{
+            SQL = "UPDATE cliente SET usuario,ciudad,clave,estado,nacionalidad,nombre_c,edo_civil WHERE id_cliente=?";
+        }
+
+        //Añadir los parámetros
+        List<Object> parameters = new ArrayList<>();
+        parameters.add(usuario);
+        parameters.add(ciudad);
+        parameters.add(clave);
+        parameters.add(estado);
+        parameters.add(nacionalidad);
+        parameters.add(nombre_c);
+        parameters.add(edo_civil);
+        return Cliente.executePostQuery(SQL,parameters,c);
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+
+    public String getIdCliente() {
+        return idCliente;
     }
 
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setIdCliente(String idCliente) {
+        this.idCliente = idCliente;
     }
 
     public String getUsuario() {
@@ -97,12 +111,52 @@ public class Cliente extends Model{
         this.usuario = usuario;
     }
 
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public String getClave() {
+        return clave;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
     public String getNacionalidad() {
         return nacionalidad;
     }
 
     public void setNacionalidad(String nacionalidad) {
         this.nacionalidad = nacionalidad;
+    }
+
+    public String getNombre_c() {
+        return nombre_c;
+    }
+
+    public void setNombre_c(String nombre_c) {
+        this.nombre_c = nombre_c;
+    }
+
+    public String getEdo_civil() {
+        return edo_civil;
+    }
+
+    public void setEdo_civil(String edo_civil) {
+        this.edo_civil = edo_civil;
     }
 
     public boolean isAdmin() {
@@ -112,48 +166,4 @@ public class Cliente extends Model{
     public void setAdmin(boolean admin) {
         isAdmin = admin;
     }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public Integer getIdCliente() {
-        return idCliente;
-    }
-
-    public void setIdCliente(Integer idCliente) {
-        this.idCliente = idCliente;
-    }
-
-
-    public boolean save(Connection c) throws SQLException{
-        String SQL;
-
-        //Si es un nuevo elemento, insertar, sino, actualizar. De esta forma, es posible usar el método tanto si es un objeto nuevo
-        //como si es uno ya ubicado
-        if(isNew){
-            SQL = "INSERT INTO clientes(nombre,apellido,usuario,contraseña,nacionalidad,es_admin,id_cliente) VALUES (?,?,?,?,?,?)";
-        }
-        else{
-            SQL = "UPDATE clientes SET nombre=?,apellido=?,usuario=?,contraseña=?,nacionalidad=?,es_admin=? WHERE id_cliente=?";
-        }
-
-        //Añadir los parámetros
-        List<Object> parameters = new ArrayList<>();
-        parameters.add(nombre);
-        parameters.add(apellido);
-        parameters.add(usuario);
-        parameters.add(password);
-        parameters.add(nacionalidad);
-        parameters.add(isAdmin);
-        parameters.add(idCliente);
-
-        return Cliente.executePostQuery(SQL,parameters,c);
-    }
-
-
 }

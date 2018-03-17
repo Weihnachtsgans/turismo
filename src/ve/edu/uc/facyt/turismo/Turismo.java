@@ -42,6 +42,13 @@ public class Turismo {
     public static void main(String[] args){
         Turismo app = new Turismo("eien","tempPassword","turismo","localhost","5432");
         Connection conn = app.connect();
+        try {
+            Cliente c = Cliente.find(conn,"temp_user");
+        }
+        catch (Exception e){
+            System.out.println(e.toString());
+        }
+
 
     }
 }
