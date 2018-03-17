@@ -13,13 +13,34 @@ public class Model {
      * Ejecuta una query.
      * @param SQL Representa la query
      * @param parameters Representa los parámetros de la query
-     * @return
+     * @return Resultado de la query
      * @throws SQLException
      */
 
     public static ResultSet executeSelectQuery(String SQL, List<Object> parameters,Connection conn) throws SQLException{
         int index = 1;
         PreparedStatement stmt = conn.prepareStatement(SQL);
+        stmt = prepareStatement(parameters, index, stmt);
+        return stmt.executeQuery();
+    }
+
+    /**
+     * Ejecuta una query que no requiera retornar datos
+     * @param SQL Representa la query
+     * @param parameters Lista de parámetros
+     * @param conn Conexión a la BD
+     * @return Booleano representando si hubo cambios o no
+     * @throws SQLException
+     */
+
+    public static Boolean executePostQuery(String SQL, List<Object> parameters, Connection conn) throws SQLException{
+        int index = 1;
+        PreparedStatement stmt = conn.prepareStatement(SQL);
+        stmt = prepareStatement(parameters, index, stmt);
+        return stmt.executeUpdate() > 0;
+    }
+
+    private static PreparedStatement prepareStatement(List<Object> parameters, int index, PreparedStatement stmt) throws SQLException {
         for(Object ob: parameters){
             if(ob.getClass() == String.class){
                 stmt.setString(index,(String)ob);
@@ -35,10 +56,6 @@ public class Model {
             }
             index++;
         }
-        return stmt.executeQuery();
-    }
-
-    public static Boolean executePostQuery(String SQL, List<Object> parameters, Connection conn){
-        return true;
+        return stmt;
     }
 }

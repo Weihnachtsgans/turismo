@@ -13,12 +13,12 @@ import java.util.List;
 
 public class Campamento extends Model{
     private String rif;
-    private long capacidad;
+    private int capacidad;
     private int precio;
     private boolean servicio_campamento;
     private boolean isNew = true;
 
-    public Campamento(String rif, long capacidad,int precio,boolean servicio_campamento) {
+    public Campamento(String rif, int capacidad,int precio,boolean servicio_campamento) {
         this.rif = rif;
         this.capacidad = capacidad;
         this.precio = precio;
@@ -31,7 +31,7 @@ public class Campamento extends Model{
         servicio_campamento = false;
     }
 
-    private Campamento(String rif, long capacidad,int precio, boolean servicio_campamento, boolean isNew) {
+    private Campamento(String rif, int capacidad,int precio, boolean servicio_campamento, boolean isNew) {
         this.rif = rif;
         this.capacidad = capacidad;
         this.precio = precio;
@@ -48,27 +48,26 @@ public class Campamento extends Model{
     }
 
 
-    /** CAMBIAR **/
+
     public boolean save(Connection c) throws SQLException{
         String SQL;
         boolean result = false;
         //Si es un nuevo elemento, insertar, sino, actualizar. De esta forma, es posible usar el método tanto si es un objeto nuevo
         //como si es uno ya ubicado
         if(isNew){
-            SQL = "INSERT INTO campamento (capacidad,rif_camp) VALUES (?,?)";
+            SQL = "INSERT INTO campamento (capacidad,precio,servicio_campamento,rif_camp) VALUES (?,?,?,?)";
         }
         else {
-            SQL = "UPDATE campamento SET capacidad=? WHERE rif_camp=?";
+            SQL = "UPDATE campamento SET capacidad=?, precio=?, servicio_campamento=? WHERE rif_camp=?";
         }
 
-        //Preparar la query, usando un prepared statement, para evitar inyecciones sql
-        PreparedStatement stmt;
-        stmt = c.prepareStatement(SQL);
+        List<Object> parameters = new ArrayList<>();
+        parameters.add(capacidad);
+        parameters.add(precio);
+        parameters.add(servicio_campamento);
+        parameters.add(rif);
 
-        stmt.setString(2,rif);
-        stmt.setLong(1,capacidad);
-
-        return stmt.executeUpdate() > 0;
+        return Campamento.executePostQuery(SQL,parameters,c);
     }
 
     public String getRif() {
@@ -79,11 +78,11 @@ public class Campamento extends Model{
         this.rif = rif;
     }
 
-    public long getCapacidad() {
+    public int getCapacidad() {
         return capacidad;
     }
 
-    public void setCapacidad(long capacidad) {
+    public void setCapacidad(int capacidad) {
         this.capacidad = capacidad;
     }
 

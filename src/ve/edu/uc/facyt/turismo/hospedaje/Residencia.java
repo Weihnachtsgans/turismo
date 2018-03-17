@@ -1,36 +1,50 @@
 package ve.edu.uc.facyt.turismo.hospedaje;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
 import ve.edu.uc.facyt.turismo.Model;
 
 public class Residencia extends Model{
     private String rif;
     private String direccion;
-    private int precio;
     private boolean servicioResidencia;
+    private int precio;
     private boolean isNew = true;
 
-    public Residencia(String rif,String direccion,int precio, boolean servicioResidencia) {
+    public Residencia(String rif, String direccion, boolean servicioResidencia, int precio) {
         this.rif = rif;
         this.direccion = direccion;
-        this.precio = precio;
         this.servicioResidencia = servicioResidencia;
+        this.precio = precio;
     }
 
-    private Residencia(String rif,String direccion,int precio, boolean servicioResidencia,boolean isNew) {
+    public Residencia() {
+    }
+
+    private Residencia(String rif, String direccion, boolean servicioResidencia, int precio, boolean isNew) {
         this.rif = rif;
         this.direccion = direccion;
-        this.precio = precio;
         this.servicioResidencia = servicioResidencia;
+        this.precio = precio;
         this.isNew = isNew;
     }
 
 
     public static Residencia find(Connection c,String rif, String dir) throws SQLException{
-        String SQL;
+        String SQL = "SELECT * FROM residencia WHERE rif_resid=? AND direccion_r=?";
+        List<Object> parameters = new ArrayList<>();
+        parameters.add(rif);
+        parameters.add(dir);
+        ResultSet rs = Residencia.executeSelectQuery(SQL,parameters,c);
+        return new Residencia(
+                rs.getString("rif_resid"),
+                rs.getString("direccion_r"),
+                rs.getBoolean("servicio_residencia"),
+                rs.getInt("precio"),
+                false
+        );
     }
 
 
@@ -43,13 +57,13 @@ public class Residencia extends Model{
             SQL = "UPDATE residencia SET servicio_residencia=?, precio=? WHERE rif_r=? AND direccion_r=?";
         }
 
-        PreparedStatement stmt = c.prepareStatement(SQL);
-        stmt.setString(3,rif);
-        stmt.setString(4,direccion);
-        stmt.setInt(2,precio);
-        stmt.setBoolean(1,servicioResidencia);
+        List<Object> parameters = new ArrayList<>();
+        parameters.add(servicioResidencia);
+        parameters.add(precio);
+        parameters.add(rif);
+        parameters.add(direccion);
 
-        return stmt.executeUpdate() > 0;
+        return Residencia.executePostQuery(SQL,parameters,c);
     }
 
     public String getRif() {

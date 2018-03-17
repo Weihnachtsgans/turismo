@@ -10,6 +10,7 @@ public class Ruta extends Model{
     private String idRuta;
     private String origen;
     private String destino;
+    private String nombreL;
     private String tipo;
     private Integer distancia;
     private int cupo;
@@ -137,20 +138,25 @@ public class Ruta extends Model{
     public boolean save(Connection c) throws SQLException{
 
         String SQL;
-        PreparedStatement stmt;
+
         if(isNew){
-            SQL = "INSERT INTO ruta(origen,destino,tipo,id_r) VALUES (?,?,?,?)";
+            SQL = "INSERT INTO ruta(origen,destino,distancia,nombre_l,tipo_l,cupo,precio,fecha,id_r) VALUES (?,?,?,?)";
         }
         else{
-            SQL = "UPDATE ruta SET origen=? destino=? tipo=? WHERE id_r=?";
+            SQL = "UPDATE ruta SET origen=?,destino=?,distancia=?,nombre_l=?,tipo_l=?,cupo=?,precio=?,fecha=? WHERE id_r=?";
         }
-        stmt = c.prepareStatement(SQL);
-        stmt.setString(4,idRuta);
-        stmt.setString(1,origen);
-        stmt.setString(2,destino);
-        stmt.setString(3,tipo);
 
+        List<Object> parameters = new ArrayList<>();
+        parameters.add(origen);
+        parameters.add(destino);
+        parameters.add(distancia);
+        parameters.add(nombreL);
+        parameters.add(tipo);
+        parameters.add(cupo);
+        parameters.add(precio);
+        parameters.add(fecha);
+        parameters.add(idRuta);
 
-        return stmt.executeUpdate() > 0;
+        return Ruta.executePostQuery(SQL,parameters,c);
     }
 }

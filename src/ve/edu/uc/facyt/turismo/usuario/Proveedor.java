@@ -1,61 +1,113 @@
 package ve.edu.uc.facyt.turismo.usuario;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
 import ve.edu.uc.facyt.turismo.Model;
-import ve.edu.uc.facyt.turismo.usuario.Cliente;
 
 
-public class Proveedor extends Cliente{
-    /*
-    private String nombre;
-    private String apellido;
+public class Proveedor extends Model{
+
+    private String idProveedor;
     private String usuario;
+    private String ciudad;
     private String password;
+    private String estado;
     private String nacionalidad;
+    private String nombre;
+    private String paisOrigen;
+    private String direccionR;
+    private String edoCivil;
     private Boolean isAdmin;
     private boolean isNew = true;
 
 
-
-    public Proveedor(String nombre, String apellido, String usuario, String password, String nacionalidad) {
-        this.nombre = nombre;
-        this.apellido = apellido;
+    public Proveedor(String idProveedor, String usuario, String ciudad, String password, String estado, String nacionalidad, String nombre, String paisOrigen, String direccionR, String edoCivil, Boolean isAdmin) {
+        this.idProveedor = idProveedor;
         this.usuario = usuario;
+        this.ciudad = ciudad;
         this.password = password;
+        this.estado = estado;
         this.nacionalidad = nacionalidad;
+        this.nombre = nombre;
+        this.paisOrigen = paisOrigen;
+        this.direccionR = direccionR;
+        this.edoCivil = edoCivil;
+        this.isAdmin = isAdmin;
     }
 
-    public Proveedor() {
-        nombre = null;
-        apellido = null;
-        usuario = null;
-        password = null;
-        nacionalidad = null;
-    }
-
-    private Proveedor(String nombre, String apellido, String usuario, String password, String nacionalidad, boolean isNew) {
-        this.nombre = nombre;
-        this.apellido = apellido;
+    private Proveedor(String idProveedor, String usuario,String ciudad, String password, String estado, String nacionalidad, String nombre, String paisOrigen, String direccionR, String edoCivil, Boolean isAdmin, boolean isNew) {
+        this.idProveedor = idProveedor;
         this.usuario = usuario;
+        this.ciudad = ciudad;
         this.password = password;
+        this.estado = estado;
         this.nacionalidad = nacionalidad;
+        this.nombre = nombre;
+        this.paisOrigen = paisOrigen;
+        this.direccionR = direccionR;
+        this.edoCivil = edoCivil;
+        this.isAdmin = isAdmin;
         this.isNew = isNew;
     }
 
-    public String getNombre() {
-        return nombre;
+    public Proveedor() {
+
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+
+    public boolean save(Connection c) throws SQLException {
+        String SQL;
+        if(isNew){
+            SQL = "INSERT INTO proveedor(usuario,ciudad,clave,estado,nacionalidad,nombre_p,pais_origen,direccion_R,edo_civil,id_proveedor) VALUES (?,?,?,?,?,?,?,?,?,?)"
+        }
+        else{
+            SQL = "UPDATE proveedor SET usuario=?, ciudad=?, clave=?, estado=?, nacionalidad=?, nombre_p=?, pais_origen=?, direccion_R=?, edo_civil=? WHERE id_proveedor=?";
+        }
+        List<Object> parameters = new ArrayList<>();
+        parameters.add(usuario);
+        parameters.add(ciudad);
+        parameters.add(password);
+        parameters.add(estado);
+        parameters.add(nacionalidad);
+        parameters.add(nombre);
+        parameters.add(paisOrigen);
+        parameters.add(direccionR);
+        parameters.add(edoCivil);
+        parameters.add(idProveedor);
+
+        return Proveedor.executePostQuery(SQL,parameters,c);
     }
 
-    public String getApellido() {
-        return apellido;
+    public static Proveedor find(Connection c,String idProveedor) throws SQLException{
+        String SQL = "SELECT * FROM proveedor WHERE id_proveedor=?";
+        List<Object> parameters = new ArrayList<>();
+        parameters.add(idProveedor);
+        ResultSet rs = Proveedor.executeSelectQuery(SQL,parameters,c);
+        return new Proveedor(
+                rs.getString("id_proveedor"),
+                rs.getString("usuario"),
+                rs.getString("ciudad"),
+                rs.getString("clave"),
+                rs.getString("estado"),
+                rs.getString("nacionalidad"),
+                rs.getString("nombre_p"),
+                rs.getString("pais_origen"),
+                rs.getString("direccion_r"),
+                rs.getString("edo_civil"),
+                false,
+                false
+                );
+
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public String getIdProveedor() {
+        return idProveedor;
+    }
+
+    public void setIdProveedor(String idProveedor) {
+        this.idProveedor = idProveedor;
     }
 
     public String getUsuario() {
@@ -66,6 +118,22 @@ public class Proveedor extends Cliente{
         this.usuario = usuario;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
     public String getNacionalidad() {
         return nacionalidad;
     }
@@ -74,51 +142,43 @@ public class Proveedor extends Cliente{
         this.nacionalidad = nacionalidad;
     }
 
-    public boolean isAdmin() {
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getPaisOrigen() {
+        return paisOrigen;
+    }
+
+    public void setPaisOrigen(String paisOrigen) {
+        this.paisOrigen = paisOrigen;
+    }
+
+    public String getDireccionR() {
+        return direccionR;
+    }
+
+    public void setDireccionR(String direccionR) {
+        this.direccionR = direccionR;
+    }
+
+    public String getEdoCivil() {
+        return edoCivil;
+    }
+
+    public void setEdoCivil(String edoCivil) {
+        this.edoCivil = edoCivil;
+    }
+
+    public Boolean getAdmin() {
         return isAdmin;
     }
 
-    public void setAdmin(boolean admin) {
+    public void setAdmin(Boolean admin) {
         isAdmin = admin;
     }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-    public boolean save(Connection c) throws SQLException{
-        /*
-        String SQL;
-
-        //Si es un nuevo elemento, insertar, sino, actualizar. De esta forma, es posible usar el método tanto si es un objeto nuevo
-        //como si es uno ya ubicado
-        if(isNew){
-            SQL = "INSERT INTO clientes(nombre,apellido,usuario,contraseña,es_admin) VALUES (?,?,?,?,?)";
-        }
-        else{
-            SQL = "UPDATE clientes SET nombre=?,apellido=?,contraseña=?,es_admin=? WHERE usuario=?";
-        }
-
-        //Preparar la query, usando un prepared statement, para evitar inyecciones sql
-        PreparedStatement stmt;
-
-        stmt = c.prepareStatement(SQL);
-        stmt.setString(1,nombre);
-        stmt.setString(2,apellido);
-        if(isNew){
-            stmt.setString(3,usuario);
-            stmt.setString(4,password);
-            stmt.setBoolean(5,isAdmin);
-        }
-        else{
-            stmt.setString(3,password);
-            stmt.setBoolean(4,isAdmin);
-            stmt.setString(5,usuario);
-        }
-
-        return stmt.executeUpdate() > 0;
-    }*/
 }

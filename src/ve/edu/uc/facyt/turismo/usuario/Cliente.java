@@ -129,7 +129,7 @@ public class Cliente extends Model{
         this.idCliente = idCliente;
     }
 
-    /** CAMBIAR **/
+
     public boolean save(Connection c) throws SQLException{
         String SQL;
 
@@ -142,20 +142,17 @@ public class Cliente extends Model{
             SQL = "UPDATE clientes SET nombre=?,apellido=?,usuario=?,contraseña=?,nacionalidad=?,es_admin=? WHERE id_cliente=?";
         }
 
-        //Preparar la query, usando un prepared statement, para evitar inyecciones sql
-        PreparedStatement stmt;
+        //Añadir los parámetros
+        List<Object> parameters = new ArrayList<>();
+        parameters.add(nombre);
+        parameters.add(apellido);
+        parameters.add(usuario);
+        parameters.add(password);
+        parameters.add(nacionalidad);
+        parameters.add(isAdmin);
+        parameters.add(idCliente);
 
-        stmt = c.prepareStatement(SQL);
-
-        stmt.setString(1,nombre);
-        stmt.setString(2,apellido);
-        stmt.setString(3,usuario);
-        stmt.setString(4,password);
-        stmt.setString(5,nacionalidad);
-        stmt.setBoolean(6,isAdmin);
-        stmt.setInt(7,idCliente);
-
-        return stmt.executeUpdate() > 0;
+        return Cliente.executePostQuery(SQL,parameters,c);
     }
 
 
