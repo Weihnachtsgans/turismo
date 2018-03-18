@@ -19,7 +19,7 @@ public class Proveedor extends Model{
     private String paisOrigen;
     private String direccionR;
     private String edoCivil;
-    private Boolean isAdmin;
+    private boolean isAdmin;
     private boolean isNew = true;
 
 
