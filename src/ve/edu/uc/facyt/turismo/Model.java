@@ -20,7 +20,7 @@ public class Model {
     public static ResultSet executeSelectQuery(String SQL, List<Object> parameters,Connection conn) throws SQLException{
         int index = 1;
         PreparedStatement stmt = conn.prepareStatement(SQL);
-        stmt = prepareStatement(parameters, index, stmt);
+        stmt = setPreparedStatementValues(parameters, index, stmt);
         return stmt.executeQuery();
     }
 
@@ -36,11 +36,11 @@ public class Model {
     public static Boolean executePostQuery(String SQL, List<Object> parameters, Connection conn) throws SQLException{
         int index = 1;
         PreparedStatement stmt = conn.prepareStatement(SQL);
-        stmt = prepareStatement(parameters, index, stmt);
+        stmt = setPreparedStatementValues(parameters, index, stmt);
         return stmt.executeUpdate() > 0;
     }
 
-    private static PreparedStatement prepareStatement(List<Object> parameters, int index, PreparedStatement stmt) throws SQLException {
+    private static PreparedStatement setPreparedStatementValues(List<Object> parameters, int index, PreparedStatement stmt) throws SQLException {
         for(Object ob: parameters){
             if(ob.getClass() == String.class){
                 stmt.setString(index,(String)ob);

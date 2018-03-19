@@ -46,6 +46,19 @@ public class Cliente extends Model{
         this.isNew = isNew;
     }
 
+    public Cliente(String idCliente,String usuario, String clave){
+        this.idCliente = idCliente;
+        this.usuario = usuario;
+        this.clave = clave;
+
+        this.ciudad = "cambiar";
+        this.estado = "cambiar";
+        this.nacionalidad = "cambiar";
+        this.nombre_c = "cambiar";
+        this.edo_civil = "Soltero";
+        this.isAdmin = false;
+    }
+
 
     public static Cliente find(Connection c,String usuario) throws SQLException{
         //Query
@@ -66,7 +79,7 @@ public class Cliente extends Model{
                 rs.getString("nacionalidad"),
                 rs.getString("nombre_c"),
                 rs.getString("edo_civil"),
-                false,
+                rs.getBoolean("es_admin"),
                 false
         );
 
@@ -78,10 +91,10 @@ public class Cliente extends Model{
         //Si es un nuevo elemento, insertar, sino, actualizar. De esta forma, es posible usar el método tanto si es un objeto nuevo
         //como si es uno ya ubicado
         if(isNew){
-            SQL = "INSERT INTO cliente(usuario,ciudad,clave,estado,nacionalidad,nombre_c,edo_civil,id_cliente) VALUES (?,?,?,?,?,?,?,?)";
+            SQL = "INSERT INTO cliente(usuario,ciudad,clave,estado,nacionalidad,nombre_c,edo_civil,es_admin,id_cliente) VALUES (?,?,?,?,?,?,?,?,?)";
         }
         else{
-            SQL = "UPDATE cliente SET usuario=?,ciudad=?,clave=?,estado=?,nacionalidad=?,nombre_c=?,edo_civil=? WHERE id_cliente=?";
+            SQL = "UPDATE cliente SET usuario=?,ciudad=?,clave=?,estado=?,nacionalidad=?,nombre_c=?,edo_civil=?,es_admin=? WHERE id_cliente=?";
         }
 
         //Añadir los parámetros
@@ -93,6 +106,7 @@ public class Cliente extends Model{
         parameters.add(nacionalidad);
         parameters.add(nombre_c);
         parameters.add(edo_civil);
+        parameters.add(isAdmin);
         parameters.add(idCliente);
         return Cliente.executePostQuery(SQL,parameters,c);
     }
