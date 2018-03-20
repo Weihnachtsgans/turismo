@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceb38e78-bbd5-429a-9d3c-e4dc574aa192" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/eien.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/eien.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Model.java" afterPath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Model.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/Model.class" afterPath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/Model.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/Turismo.class" afterPath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/Turismo.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/usuario/Cliente.class" afterPath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/usuario/Cliente.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/usuario/Proveedor.class" afterPath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/usuario/Proveedor.class" />
       <change beforePath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java" afterPath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java" />
       <change beforePath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Cliente.java" afterPath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Cliente.java" />
     </list>
@@ -29,21 +33,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Turismo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Turismo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-247">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="282">
+              <caret line="286" column="46" lean-forward="false" selection-start-line="286" selection-start-column="46" selection-end-line="286" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#9005#9006#0" expanded="true" />
+                <element signature="e#9034#9035#0" expanded="true" />
+                <element signature="e#9078#9079#0" expanded="true" />
+                <element signature="e#9114#9115#0" expanded="true" />
+                <element signature="e#9151#9152#0" expanded="true" />
+                <element signature="e#9184#9185#0" expanded="true" />
+                <element signature="e#9236#9237#0" expanded="true" />
+                <element signature="e#9280#9281#0" expanded="true" />
+                <element signature="e#9313#9314#0" expanded="true" />
+                <element signature="e#9342#9343#0" expanded="true" />
+                <element signature="e#9386#9387#0" expanded="true" />
+                <element signature="e#9422#9423#0" expanded="true" />
+                <element signature="e#9455#9456#0" expanded="true" />
+                <element signature="e#9484#9485#0" expanded="true" />
+                <element signature="e#9528#9529#0" expanded="true" />
+                <element signature="e#9564#9565#0" expanded="true" />
+                <element signature="e#9597#9598#0" expanded="true" />
+                <element signature="e#9626#9627#0" expanded="true" />
+                <element signature="e#9670#9671#0" expanded="true" />
+                <element signature="e#9706#9707#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hospedaje.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Hospedaje.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cliente.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Cliente.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="105" column="37" lean-forward="false" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
+            <state relative-caret-position="2198">
+              <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3859#3860#0" expanded="true" />
@@ -80,11 +116,9 @@
                 <element signature="e#5043#5044#0" expanded="true" />
                 <element signature="e#5075#5076#0" expanded="true" />
                 <element signature="e#5105#5106#0" expanded="true" />
-                <element signature="e#5148#5149#0" expanded="true" />
-                <element signature="e#5179#5180#0" expanded="true" />
-                <marker date="1521387962401" expanded="true" signature="2011:2048" ph="SELECT * FRO... clientes" />
-                <marker date="1521387962401" expanded="true" signature="3062:3189" ph="INSERT INTO clientes... " />
-                <marker date="1521387962401" expanded="true" signature="3235:3357" ph="UPDATE clientes... " />
+                <marker date="1521500884787" expanded="true" signature="2011:2048" ph="SELECT * FRO... clientes" />
+                <marker date="1521500884787" expanded="true" signature="3062:3189" ph="INSERT INTO clientes... " />
+                <marker date="1521500884787" expanded="true" signature="3235:3357" ph="UPDATE clientes... " />
               </folding>
             </state>
           </provider>
@@ -109,37 +143,6 @@
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Campamento.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Campamento.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2575#2576#0" expanded="true" />
-                <element signature="e#2601#2602#0" expanded="true" />
-                <element signature="e#2639#2640#0" expanded="true" />
-                <element signature="e#2669#2670#0" expanded="true" />
-                <element signature="e#2702#2703#0" expanded="true" />
-                <element signature="e#2734#2735#0" expanded="true" />
-                <element signature="e#2781#2782#0" expanded="true" />
-                <element signature="e#2823#2824#0" expanded="true" />
-                <element signature="e#2853#2854#0" expanded="true" />
-                <element signature="e#2882#2883#0" expanded="true" />
-                <element signature="e#2923#2924#0" expanded="true" />
-                <element signature="e#2959#2960#0" expanded="true" />
-                <element signature="e#3005#3006#0" expanded="true" />
-                <element signature="e#3047#3048#0" expanded="true" />
-                <element signature="e#3118#3119#0" expanded="true" />
-                <element signature="e#3180#3181#0" expanded="true" />
-                <marker date="1521304905450" expanded="true" signature="1268:1304" ph="SELECT * FRO... campamento" />
-                <marker date="1521304905450" expanded="true" signature="2053:2140" ph="INSERT INTO campamento... " />
-                <marker date="1521304905450" expanded="true" signature="2187:2270" ph="UPDATE campamento... " />
               </folding>
             </state>
           </provider>
@@ -231,30 +234,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Residencia.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Residencia.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2629#2630#0" expanded="true" />
-                <element signature="e#2661#2662#0" expanded="true" />
-                <element signature="e#2711#2712#0" expanded="true" />
-                <element signature="e#2753#2754#0" expanded="true" />
-                <element signature="e#2783#2784#0" expanded="true" />
-                <element signature="e#2812#2813#0" expanded="true" />
-                <element signature="e#2853#2854#0" expanded="true" />
-                <element signature="e#2889#2890#0" expanded="true" />
-                <marker date="1521304913493" expanded="true" signature="1765:1833" ph="INSERT INTO residencia... " />
-                <marker date="1521304913493" expanded="true" signature="1765:1849" ph="INSERT INTO residencia... " />
-                <marker date="1521304913493" expanded="true" signature="1895:1962" ph="UPDATE residencia... " />
-                <marker date="1521304913493" expanded="true" signature="1895:1980" ph="UPDATE residencia... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -322,6 +301,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -355,9 +336,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -517,11 +496,14 @@
       <workItem from="1521385483094" duration="5638000" />
       <workItem from="1521423946853" duration="4985000" />
       <workItem from="1521463814253" duration="4299000" />
+      <workItem from="1521480598531" duration="591000" />
+      <workItem from="1521483692802" duration="20000" />
+      <workItem from="1521500253651" duration="6531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82268000" />
+    <option name="totallyTimeSpent" value="89410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3" y="7" width="1360" height="758" extended-state="6" />
@@ -529,13 +511,14 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3183183" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32732734" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -545,13 +528,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32488823" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -603,7 +585,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9005#9006#0" expanded="true" />
+            <element signature="e#9034#9035#0" expanded="true" />
+            <element signature="e#9078#9079#0" expanded="true" />
+            <element signature="e#9114#9115#0" expanded="true" />
+            <element signature="e#9151#9152#0" expanded="true" />
+            <element signature="e#9184#9185#0" expanded="true" />
+            <element signature="e#9236#9237#0" expanded="true" />
+            <element signature="e#9280#9281#0" expanded="true" />
+            <element signature="e#9313#9314#0" expanded="true" />
+            <element signature="e#9342#9343#0" expanded="true" />
+            <element signature="e#9386#9387#0" expanded="true" />
+            <element signature="e#9422#9423#0" expanded="true" />
+            <element signature="e#9455#9456#0" expanded="true" />
+            <element signature="e#9484#9485#0" expanded="true" />
+            <element signature="e#9528#9529#0" expanded="true" />
+            <element signature="e#9564#9565#0" expanded="true" />
+            <element signature="e#9597#9598#0" expanded="true" />
+            <element signature="e#9626#9627#0" expanded="true" />
+            <element signature="e#9670#9671#0" expanded="true" />
+            <element signature="e#9706#9707#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -822,11 +826,9 @@
             <element signature="e#5043#5044#0" expanded="true" />
             <element signature="e#5075#5076#0" expanded="true" />
             <element signature="e#5105#5106#0" expanded="true" />
-            <element signature="e#5148#5149#0" expanded="true" />
-            <element signature="e#5179#5180#0" expanded="true" />
-            <marker date="1521387962401" expanded="true" signature="2011:2048" ph="SELECT * FRO... clientes" />
-            <marker date="1521387962401" expanded="true" signature="3062:3189" ph="INSERT INTO clientes... " />
-            <marker date="1521387962401" expanded="true" signature="3235:3357" ph="UPDATE clientes... " />
+            <marker date="1521500884787" expanded="true" signature="2011:2048" ph="SELECT * FRO... clientes" />
+            <marker date="1521500884787" expanded="true" signature="3062:3189" ph="INSERT INTO clientes... " />
+            <marker date="1521500884787" expanded="true" signature="3235:3357" ph="UPDATE clientes... " />
           </folding>
         </state>
       </provider>
@@ -835,7 +837,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9005#9006#0" expanded="true" />
+            <element signature="e#9034#9035#0" expanded="true" />
+            <element signature="e#9078#9079#0" expanded="true" />
+            <element signature="e#9114#9115#0" expanded="true" />
+            <element signature="e#9151#9152#0" expanded="true" />
+            <element signature="e#9184#9185#0" expanded="true" />
+            <element signature="e#9236#9237#0" expanded="true" />
+            <element signature="e#9280#9281#0" expanded="true" />
+            <element signature="e#9313#9314#0" expanded="true" />
+            <element signature="e#9342#9343#0" expanded="true" />
+            <element signature="e#9386#9387#0" expanded="true" />
+            <element signature="e#9422#9423#0" expanded="true" />
+            <element signature="e#9455#9456#0" expanded="true" />
+            <element signature="e#9484#9485#0" expanded="true" />
+            <element signature="e#9528#9529#0" expanded="true" />
+            <element signature="e#9564#9565#0" expanded="true" />
+            <element signature="e#9597#9598#0" expanded="true" />
+            <element signature="e#9626#9627#0" expanded="true" />
+            <element signature="e#9670#9671#0" expanded="true" />
+            <element signature="e#9706#9707#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -879,11 +903,9 @@
             <element signature="e#5043#5044#0" expanded="true" />
             <element signature="e#5075#5076#0" expanded="true" />
             <element signature="e#5105#5106#0" expanded="true" />
-            <element signature="e#5148#5149#0" expanded="true" />
-            <element signature="e#5179#5180#0" expanded="true" />
-            <marker date="1521387962401" expanded="true" signature="2011:2048" ph="SELECT * FRO... clientes" />
-            <marker date="1521387962401" expanded="true" signature="3062:3189" ph="INSERT INTO clientes... " />
-            <marker date="1521387962401" expanded="true" signature="3235:3357" ph="UPDATE clientes... " />
+            <marker date="1521500884787" expanded="true" signature="2011:2048" ph="SELECT * FRO... clientes" />
+            <marker date="1521500884787" expanded="true" signature="3062:3189" ph="INSERT INTO clientes... " />
+            <marker date="1521500884787" expanded="true" signature="3235:3357" ph="UPDATE clientes... " />
           </folding>
         </state>
       </provider>
@@ -1057,7 +1079,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9005#9006#0" expanded="true" />
+            <element signature="e#9034#9035#0" expanded="true" />
+            <element signature="e#9078#9079#0" expanded="true" />
+            <element signature="e#9114#9115#0" expanded="true" />
+            <element signature="e#9151#9152#0" expanded="true" />
+            <element signature="e#9184#9185#0" expanded="true" />
+            <element signature="e#9236#9237#0" expanded="true" />
+            <element signature="e#9280#9281#0" expanded="true" />
+            <element signature="e#9313#9314#0" expanded="true" />
+            <element signature="e#9342#9343#0" expanded="true" />
+            <element signature="e#9386#9387#0" expanded="true" />
+            <element signature="e#9422#9423#0" expanded="true" />
+            <element signature="e#9455#9456#0" expanded="true" />
+            <element signature="e#9484#9485#0" expanded="true" />
+            <element signature="e#9528#9529#0" expanded="true" />
+            <element signature="e#9564#9565#0" expanded="true" />
+            <element signature="e#9597#9598#0" expanded="true" />
+            <element signature="e#9626#9627#0" expanded="true" />
+            <element signature="e#9670#9671#0" expanded="true" />
+            <element signature="e#9706#9707#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1101,11 +1145,9 @@
             <element signature="e#5043#5044#0" expanded="true" />
             <element signature="e#5075#5076#0" expanded="true" />
             <element signature="e#5105#5106#0" expanded="true" />
-            <element signature="e#5148#5149#0" expanded="true" />
-            <element signature="e#5179#5180#0" expanded="true" />
-            <marker date="1521387962401" expanded="true" signature="2011:2048" ph="SELECT * FRO... clientes" />
-            <marker date="1521387962401" expanded="true" signature="3062:3189" ph="INSERT INTO clientes... " />
-            <marker date="1521387962401" expanded="true" signature="3235:3357" ph="UPDATE clientes... " />
+            <marker date="1521500884787" expanded="true" signature="2011:2048" ph="SELECT * FRO... clientes" />
+            <marker date="1521500884787" expanded="true" signature="3062:3189" ph="INSERT INTO clientes... " />
+            <marker date="1521500884787" expanded="true" signature="3235:3357" ph="UPDATE clientes... " />
           </folding>
         </state>
       </provider>
@@ -1279,7 +1321,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9005#9006#0" expanded="true" />
+            <element signature="e#9034#9035#0" expanded="true" />
+            <element signature="e#9078#9079#0" expanded="true" />
+            <element signature="e#9114#9115#0" expanded="true" />
+            <element signature="e#9151#9152#0" expanded="true" />
+            <element signature="e#9184#9185#0" expanded="true" />
+            <element signature="e#9236#9237#0" expanded="true" />
+            <element signature="e#9280#9281#0" expanded="true" />
+            <element signature="e#9313#9314#0" expanded="true" />
+            <element signature="e#9342#9343#0" expanded="true" />
+            <element signature="e#9386#9387#0" expanded="true" />
+            <element signature="e#9422#9423#0" expanded="true" />
+            <element signature="e#9455#9456#0" expanded="true" />
+            <element signature="e#9484#9485#0" expanded="true" />
+            <element signature="e#9528#9529#0" expanded="true" />
+            <element signature="e#9564#9565#0" expanded="true" />
+            <element signature="e#9597#9598#0" expanded="true" />
+            <element signature="e#9626#9627#0" expanded="true" />
+            <element signature="e#9670#9671#0" expanded="true" />
+            <element signature="e#9706#9707#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1323,11 +1387,9 @@
             <element signature="e#5043#5044#0" expanded="true" />
             <element signature="e#5075#5076#0" expanded="true" />
             <element signature="e#5105#5106#0" expanded="true" />
-            <element signature="e#5148#5149#0" expanded="true" />
-            <element signature="e#5179#5180#0" expanded="true" />
-            <marker date="1521387962401" expanded="true" signature="2011:2048" ph="SELECT * FRO... clientes" />
-            <marker date="1521387962401" expanded="true" signature="3062:3189" ph="INSERT INTO clientes... " />
-            <marker date="1521387962401" expanded="true" signature="3235:3357" ph="UPDATE clientes... " />
+            <marker date="1521500884787" expanded="true" signature="2011:2048" ph="SELECT * FRO... clientes" />
+            <marker date="1521500884787" expanded="true" signature="3062:3189" ph="INSERT INTO clientes... " />
+            <marker date="1521500884787" expanded="true" signature="3235:3357" ph="UPDATE clientes... " />
           </folding>
         </state>
       </provider>
@@ -1501,36 +1563,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9005#9006#0" expanded="true" />
+            <element signature="e#9034#9035#0" expanded="true" />
+            <element signature="e#9078#9079#0" expanded="true" />
+            <element signature="e#9114#9115#0" expanded="true" />
+            <element signature="e#9151#9152#0" expanded="true" />
+            <element signature="e#9184#9185#0" expanded="true" />
+            <element signature="e#9236#9237#0" expanded="true" />
+            <element signature="e#9280#9281#0" expanded="true" />
+            <element signature="e#9313#9314#0" expanded="true" />
+            <element signature="e#9342#9343#0" expanded="true" />
+            <element signature="e#9386#9387#0" expanded="true" />
+            <element signature="e#9422#9423#0" expanded="true" />
+            <element signature="e#9455#9456#0" expanded="true" />
+            <element signature="e#9484#9485#0" expanded="true" />
+            <element signature="e#9528#9529#0" expanded="true" />
+            <element signature="e#9564#9565#0" expanded="true" />
+            <element signature="e#9597#9598#0" expanded="true" />
+            <element signature="e#9626#9627#0" expanded="true" />
+            <element signature="e#9670#9671#0" expanded="true" />
+            <element signature="e#9706#9707#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/MainWindow.java" />
     <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/MainWindow.form" />
     <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/MainWindow.java" />
-    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Hospedaje.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="e#439#440#0" expanded="false" />
-            <element signature="e#468#469#0" expanded="false" />
-            <element signature="e#511#512#0" expanded="false" />
-            <element signature="e#547#548#0" expanded="false" />
-            <element signature="e#577#578#0" expanded="false" />
-            <element signature="e#603#604#0" expanded="false" />
-            <element signature="e#641#642#0" expanded="false" />
-            <element signature="e#671#672#0" expanded="false" />
-            <element signature="e#707#708#0" expanded="false" />
-            <element signature="e#739#740#0" expanded="false" />
-            <element signature="e#789#790#0" expanded="false" />
-            <element signature="e#831#832#0" expanded="false" />
-            <element signature="e#859#860#0" expanded="false" />
-            <element signature="e#886#887#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1570,9 +1631,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/turismo.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/transporte/Ruta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="611">
+          <caret line="51" column="9" lean-forward="false" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2523#2524#0" expanded="true" />
+            <element signature="e#2552#2553#0" expanded="true" />
+            <element signature="e#2596#2597#0" expanded="true" />
+            <element signature="e#2632#2633#0" expanded="true" />
+            <element signature="e#2669#2670#0" expanded="true" />
+            <element signature="e#2701#2702#0" expanded="true" />
+            <element signature="e#2752#2753#0" expanded="true" />
+            <element signature="e#2794#2795#0" expanded="true" />
+            <element signature="e#2822#2823#0" expanded="true" />
+            <element signature="e#2849#2850#0" expanded="true" />
+            <element signature="e#2886#2887#0" expanded="true" />
+            <element signature="e#2918#2919#0" expanded="true" />
+            <element signature="e#2950#2951#0" expanded="true" />
+            <element signature="e#2979#2980#0" expanded="true" />
+            <element signature="e#3022#3023#0" expanded="true" />
+            <element signature="e#3058#3059#0" expanded="true" />
+            <element signature="e#3088#3089#0" expanded="true" />
+            <element signature="e#3116#3117#0" expanded="true" />
+            <element signature="e#3156#3157#0" expanded="true" />
+            <element signature="e#3190#3191#0" expanded="true" />
+            <marker date="1521304908258" expanded="true" signature="3332:3430" ph="INSERT INTO ruta... " />
+            <marker date="1521304908258" expanded="true" signature="3476:3579" ph="UPDATE ruta... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Posada.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
+        <state relative-caret-position="-498">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1602,10 +1712,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/turismo.iml">
+    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Campamento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2575#2576#0" expanded="true" />
+            <element signature="e#2601#2602#0" expanded="true" />
+            <element signature="e#2639#2640#0" expanded="true" />
+            <element signature="e#2669#2670#0" expanded="true" />
+            <element signature="e#2702#2703#0" expanded="true" />
+            <element signature="e#2734#2735#0" expanded="true" />
+            <element signature="e#2781#2782#0" expanded="true" />
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2853#2854#0" expanded="true" />
+            <element signature="e#2882#2883#0" expanded="true" />
+            <element signature="e#2923#2924#0" expanded="true" />
+            <element signature="e#2959#2960#0" expanded="true" />
+            <element signature="e#3005#3006#0" expanded="true" />
+            <element signature="e#3047#3048#0" expanded="true" />
+            <element signature="e#3118#3119#0" expanded="true" />
+            <element signature="e#3180#3181#0" expanded="true" />
+            <marker date="1521304905450" expanded="true" signature="1268:1304" ph="SELECT * FRO... campamento" />
+            <marker date="1521304905450" expanded="true" signature="2053:2140" ph="INSERT INTO campamento... " />
+            <marker date="1521304905450" expanded="true" signature="2187:2270" ph="UPDATE campamento... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Programming/Java/dbtest/src/com/test/dbtest/DbTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Residencia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2629#2630#0" expanded="true" />
+            <element signature="e#2661#2662#0" expanded="true" />
+            <element signature="e#2711#2712#0" expanded="true" />
+            <element signature="e#2753#2754#0" expanded="true" />
+            <element signature="e#2783#2784#0" expanded="true" />
+            <element signature="e#2812#2813#0" expanded="true" />
+            <element signature="e#2853#2854#0" expanded="true" />
+            <element signature="e#2889#2890#0" expanded="true" />
+            <marker date="1521304913493" expanded="true" signature="1765:1833" ph="INSERT INTO residencia... " />
+            <marker date="1521304913493" expanded="true" signature="1765:1849" ph="INSERT INTO residencia... " />
+            <marker date="1521304913493" expanded="true" signature="1895:1962" ph="UPDATE residencia... " />
+            <marker date="1521304913493" expanded="true" signature="1895:1980" ph="UPDATE residencia... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1659,113 +1823,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Residencia.java">
+    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+        <state relative-caret-position="282">
+          <caret line="286" column="46" lean-forward="false" selection-start-line="286" selection-start-column="46" selection-end-line="286" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2629#2630#0" expanded="true" />
-            <element signature="e#2661#2662#0" expanded="true" />
-            <element signature="e#2711#2712#0" expanded="true" />
-            <element signature="e#2753#2754#0" expanded="true" />
-            <element signature="e#2783#2784#0" expanded="true" />
-            <element signature="e#2812#2813#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2889#2890#0" expanded="true" />
-            <marker date="1521304913493" expanded="true" signature="1765:1833" ph="INSERT INTO residencia... " />
-            <marker date="1521304913493" expanded="true" signature="1765:1849" ph="INSERT INTO residencia... " />
-            <marker date="1521304913493" expanded="true" signature="1895:1962" ph="UPDATE residencia... " />
-            <marker date="1521304913493" expanded="true" signature="1895:1980" ph="UPDATE residencia... " />
+            <element signature="e#9005#9006#0" expanded="true" />
+            <element signature="e#9034#9035#0" expanded="true" />
+            <element signature="e#9078#9079#0" expanded="true" />
+            <element signature="e#9114#9115#0" expanded="true" />
+            <element signature="e#9151#9152#0" expanded="true" />
+            <element signature="e#9184#9185#0" expanded="true" />
+            <element signature="e#9236#9237#0" expanded="true" />
+            <element signature="e#9280#9281#0" expanded="true" />
+            <element signature="e#9313#9314#0" expanded="true" />
+            <element signature="e#9342#9343#0" expanded="true" />
+            <element signature="e#9386#9387#0" expanded="true" />
+            <element signature="e#9422#9423#0" expanded="true" />
+            <element signature="e#9455#9456#0" expanded="true" />
+            <element signature="e#9484#9485#0" expanded="true" />
+            <element signature="e#9528#9529#0" expanded="true" />
+            <element signature="e#9564#9565#0" expanded="true" />
+            <element signature="e#9597#9598#0" expanded="true" />
+            <element signature="e#9626#9627#0" expanded="true" />
+            <element signature="e#9670#9671#0" expanded="true" />
+            <element signature="e#9706#9707#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/transporte/Ruta.java">
+    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Hospedaje.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="51" column="9" lean-forward="false" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
-            <element signature="e#2552#2553#0" expanded="true" />
-            <element signature="e#2596#2597#0" expanded="true" />
-            <element signature="e#2632#2633#0" expanded="true" />
-            <element signature="e#2669#2670#0" expanded="true" />
-            <element signature="e#2701#2702#0" expanded="true" />
-            <element signature="e#2752#2753#0" expanded="true" />
-            <element signature="e#2794#2795#0" expanded="true" />
-            <element signature="e#2822#2823#0" expanded="true" />
-            <element signature="e#2849#2850#0" expanded="true" />
-            <element signature="e#2886#2887#0" expanded="true" />
-            <element signature="e#2918#2919#0" expanded="true" />
-            <element signature="e#2950#2951#0" expanded="true" />
-            <element signature="e#2979#2980#0" expanded="true" />
-            <element signature="e#3022#3023#0" expanded="true" />
-            <element signature="e#3058#3059#0" expanded="true" />
-            <element signature="e#3088#3089#0" expanded="true" />
-            <element signature="e#3116#3117#0" expanded="true" />
-            <element signature="e#3156#3157#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-            <marker date="1521304908258" expanded="true" signature="3332:3430" ph="INSERT INTO ruta... " />
-            <marker date="1521304908258" expanded="true" signature="3476:3579" ph="UPDATE ruta... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Programming/Java/dbtest/src/com/test/dbtest/DbTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Campamento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2575#2576#0" expanded="true" />
-            <element signature="e#2601#2602#0" expanded="true" />
-            <element signature="e#2639#2640#0" expanded="true" />
-            <element signature="e#2669#2670#0" expanded="true" />
-            <element signature="e#2702#2703#0" expanded="true" />
-            <element signature="e#2734#2735#0" expanded="true" />
-            <element signature="e#2781#2782#0" expanded="true" />
-            <element signature="e#2823#2824#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2882#2883#0" expanded="true" />
-            <element signature="e#2923#2924#0" expanded="true" />
-            <element signature="e#2959#2960#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
-            <element signature="e#3047#3048#0" expanded="true" />
-            <element signature="e#3118#3119#0" expanded="true" />
-            <element signature="e#3180#3181#0" expanded="true" />
-            <marker date="1521304905450" expanded="true" signature="1268:1304" ph="SELECT * FRO... campamento" />
-            <marker date="1521304905450" expanded="true" signature="2053:2140" ph="INSERT INTO campamento... " />
-            <marker date="1521304905450" expanded="true" signature="2187:2270" ph="UPDATE campamento... " />
-          </folding>
+        <state relative-caret-position="143">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="105" column="37" lean-forward="false" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="37" />
+        <state relative-caret-position="2198">
+          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3859#3860#0" expanded="true" />
@@ -1802,20 +1901,10 @@
             <element signature="e#5043#5044#0" expanded="true" />
             <element signature="e#5075#5076#0" expanded="true" />
             <element signature="e#5105#5106#0" expanded="true" />
-            <element signature="e#5148#5149#0" expanded="true" />
-            <element signature="e#5179#5180#0" expanded="true" />
-            <marker date="1521387962401" expanded="true" signature="2011:2048" ph="SELECT * FRO... clientes" />
-            <marker date="1521387962401" expanded="true" signature="3062:3189" ph="INSERT INTO clientes... " />
-            <marker date="1521387962401" expanded="true" signature="3235:3357" ph="UPDATE clientes... " />
+            <marker date="1521500884787" expanded="true" signature="2011:2048" ph="SELECT * FRO... clientes" />
+            <marker date="1521500884787" expanded="true" signature="3062:3189" ph="INSERT INTO clientes... " />
+            <marker date="1521500884787" expanded="true" signature="3235:3357" ph="UPDATE clientes... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

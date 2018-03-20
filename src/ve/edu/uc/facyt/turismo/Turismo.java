@@ -61,26 +61,11 @@ public class Turismo {
             conn = DriverManager.getConnection(connString,dbUser,dbPassword);
         } catch (SQLException sqlE){
             System.out.println(sqlE.toString());
+            System.exit(1);
         }
         return conn;
     }
 
-
-    /**
-     * Update user info
-     * @param c
-     * @param conn
-     * @return
-     */
-    public boolean updateUser(Cliente c, Connection conn){
-        try {
-            c.save(conn);
-        }
-        catch(SQLException e){
-            return false;
-        }
-        return true;
-    }
 
     /**
      * Register user
@@ -95,14 +80,12 @@ public class Turismo {
         String randomString = UUID.randomUUID().toString().replaceAll("-","");
         String idCliente = user + randomString.charAt(0) + randomString.charAt(1) + randomString.charAt(2);
         Cliente c = null;
-        boolean success = true;
         try{
-            SQL = "INSERT INTO cliente VALUES(?,?,?,?,?,?,?,?,?)";
             c = new Cliente(idCliente,user,password);
             c.save(conn);
         }
         catch (SQLException e){
-            success = false;
+            System.out.println(e.toString());
             c = null;
         }
 
@@ -122,24 +105,25 @@ public class Turismo {
         Scanner inn = new Scanner(System.in);
         String usuario;
         String contrasena;
-        Cliente c;
+        Cliente c = null;
         boolean valid = false;
-        boolean volverAtras = false;
         System.out.println("Ingrese \"GO BACK!!!\" en cualquier momento para volver atras");
         do {
             System.out.println("Nombre de usuario");
             usuario = inn.nextLine();
+            if(usuario.equals("GO BACK!!!"))
+                break;
             System.out.println("Contraseña");
             contrasena = inn.nextLine();
-            if(usuario.equals("GO BACK!!!") || contrasena.equals("GO BACK!!!")){
-                volverAtras = true;
-            }
+            if(contrasena.equals("GO BACK!!!"))
+                break;
+
             else{
                 c = registerUser(usuario,contrasena,conn);
                 if(c == null)
-                    System.out.println("Ha ocurrido un error, vuelva a intentar")
+                    System.out.println("Ha ocurrido un error, vuelva a intentar");
             }
-        }while(c == null && !volverAtras);
+        }while(c == null);
         return c;
     }
 
@@ -150,32 +134,131 @@ public class Turismo {
         Cliente c = null;
         boolean valid = false;
         boolean volverAtras = false;
-        boolean valid = false;
         do {
             System.out.println("Nombre de usuario");
             usuario = inn.nextLine();
+            if(usuario.equals("GO BACK!!!"))
+                break;
+
             System.out.println("Contraseña");
             contrasena = inn.nextLine();
-            if(usuario.equals("GO BACK!!!") || contrasena.equals("GO BACK!!!")){
-                volverAtras = true;
+            if(contrasena.equals("GO BACK!!!"))
+                break;
+
+            try {
+                c = loginUser(usuario,contrasena,conn);
+                valid = true;
             }
-            else{
-                try {
-                    c = loginUser(usuario,contrasena,conn);
-                    valid = true;
-                }
-                catch (SQLException e){
-                    System.out.println("Credenciales inválidas");
-                    c = null;
-                }
+            catch (SQLException e){
+                System.out.println("Credenciales inválidas");
+                c = null;
             }
-        }while(!valid && !volverAtras);
+        }while(!valid);
         return c;
+    }
+
+    private void createHospedaje(Connection conn){
+
+    }
+
+    /**
+     * Interfaz para el menu del administrador
+     * @param c
+     */
+
+    private void showAdminMainMenu(Cliente c,Connection conn){
+        Scanner inn = new Scanner(System.in);
+        int option;
+        System.out.println("¿Qué desea hacer, administrador?");
+        System.out.println("1 - Ingresar Hospedaje");
+        System.out.println("2 - Ingresar Transporte");
+        System.out.println("3 - Emitir reporte");
+        System.out.println("4 - salir");
+        do{
+            option = inn.nextInt();
+            if(option == 3)
+                System.exit(1);
+        }while(option<0 || option >4);
+    }
+
+    private void handleChangeData(Cliente c, Connection conn){
+        String[] opciones = {"ciudad","contraseña","estado","nacionalidad","nombre","estado civil"};
+        while (true){
+            System.out.println("¿Qué desea cambiar?");
+            System.out.println("1 - Ciudad");
+            System.out.println("2 - Contraseña");
+            System.out.println("3 - Estado");
+            System.out.println("4 - Nacionalidad");
+            System.out.println("5 - Nombre");
+            System.out.println("6 - Estado civil");
+            System.out.println("7 - salir");
+
+            Scanner inn = new Scanner(System.in);
+            int option;
+            String newValue = null;
+            do{
+                option = inn.nextInt();
+                if(option == 7)
+                    System.exit(1);
+            }while(option < 0 || option > 7);
+            System.out.println(String.format("Ingrese su nuevo valor para %s",opciones[option-1]));
+            inn = new Scanner(System.in);
+            newValue = inn.nextLine();
+            switch (option){
+                case 1:
+                    c.setCiudad(newValue);
+                    break;
+                case 2:
+                    c.setClave(newValue);
+                    break;
+                case 3:
+                    c.setEstado(newValue);
+                    break;
+                case 4:
+                    c.setNacionalidad(newValue);
+                    break;
+                case 5:
+                    c.setNombre_c(newValue);
+                    break;
+                case 6:
+                    c.setEdo_civil(newValue);
+                    break;
+                default:
+                    System.out.println("opcion no válida");
+            }
+            try{
+
+                c.save(conn);
+            }
+            catch (SQLException e){
+                System.out.println("Ha ocurrido un error al guardar sus cambios, prueba de nuevo");
+            }
+        }
+    }
+
+
+    /**
+     * Maneja el mostrar el menú
+     * @param Cliente c
+     */
+    private void showUserMainMenu(Cliente c,Connection conn){
+        Scanner inn = new Scanner(System.in);
+        int option;
+        System.out.println(String.format("¿Qué desea hacer, %s?",c.getUsuario()));
+        System.out.println("1 - Cambiar datos");
+        System.out.println("2 - salir");
+        do{
+            option = inn.nextInt();
+            if(option == 2)
+                System.exit(1);
+        }while (option<0 || option >2);
+        handleChangeData(c,conn);
+
     }
 
 
     public static void main(String[] args){
-        Turismo app = new Turismo("cliente_turismo","contraseña random","turismo","localhost","5432");
+        Turismo app = new Turismo("cliente_turismo","contraseña random","proyecto_turismo","localhost","5432");
         Connection conn = app.connect();
         int option;
         boolean exit = false;
@@ -196,8 +279,55 @@ public class Turismo {
             else
                 exit = true;
         }while(c == null && !exit);
+        if(!exit) {
+            if (c.isAdmin()) {
+                app.setDbUser("admin_turismo");
+                app.setDbPassword("contraseña muy segura");
+                conn = app.connect();
+                app.showAdminMainMenu(c,conn);
+            } else {
+                app.showUserMainMenu(c,conn);
+            }
+        }
+    }
 
+    public String getDbUser() {
+        return dbUser;
+    }
 
+    public void setDbUser(String dbUser) {
+        this.dbUser = dbUser;
+    }
 
+    public String getDbPassword() {
+        return dbPassword;
+    }
+
+    public void setDbPassword(String dbPassword) {
+        this.dbPassword = dbPassword;
+    }
+
+    public String getDbName() {
+        return dbName;
+    }
+
+    public void setDbName(String dbName) {
+        this.dbName = dbName;
+    }
+
+    public String getDbHost() {
+        return dbHost;
+    }
+
+    public void setDbHost(String dbHost) {
+        this.dbHost = dbHost;
+    }
+
+    public String getDbPort() {
+        return dbPort;
+    }
+
+    public void setDbPort(String dbPort) {
+        this.dbPort = dbPort;
     }
 }

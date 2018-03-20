@@ -180,7 +180,4 @@ public class Cliente extends Model{
         return isAdmin;
     }
 
-    public void setAdmin(boolean admin) {
-        isAdmin = admin;
-    }
 }
