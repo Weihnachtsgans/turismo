@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ceb38e78-bbd5-429a-9d3c-e4dc574aa192" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/eien.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/eien.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/Model.class" afterPath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/Model.class" />
       <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/Turismo.class" afterPath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/Turismo.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/usuario/Cliente.class" afterPath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/usuario/Cliente.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/usuario/Proveedor.class" afterPath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/usuario/Proveedor.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/hospedaje/Hospedaje.class" afterPath="$PROJECT_DIR$/out/production/turismo/ve/edu/uc/facyt/turismo/hospedaje/Hospedaje.class" />
+      <change beforePath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Model.java" afterPath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Model.java" />
       <change beforePath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java" afterPath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java" />
-      <change beforePath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Cliente.java" afterPath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Cliente.java" />
+      <change beforePath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Hospedaje.java" afterPath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Hospedaje.java" />
+      <change beforePath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/transporte/Ruta.java" afterPath="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/transporte/Ruta.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,30 +35,30 @@
       <file leaf-file-name="Turismo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="286" column="46" lean-forward="false" selection-start-line="286" selection-start-column="46" selection-end-line="286" selection-end-column="46" />
+            <state relative-caret-position="240">
+              <caret line="368" column="51" lean-forward="false" selection-start-line="368" selection-start-column="51" selection-end-line="368" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#9005#9006#0" expanded="true" />
-                <element signature="e#9034#9035#0" expanded="true" />
-                <element signature="e#9078#9079#0" expanded="true" />
-                <element signature="e#9114#9115#0" expanded="true" />
-                <element signature="e#9151#9152#0" expanded="true" />
-                <element signature="e#9184#9185#0" expanded="true" />
-                <element signature="e#9236#9237#0" expanded="true" />
-                <element signature="e#9280#9281#0" expanded="true" />
-                <element signature="e#9313#9314#0" expanded="true" />
-                <element signature="e#9342#9343#0" expanded="true" />
-                <element signature="e#9386#9387#0" expanded="true" />
-                <element signature="e#9422#9423#0" expanded="true" />
-                <element signature="e#9455#9456#0" expanded="true" />
-                <element signature="e#9484#9485#0" expanded="true" />
-                <element signature="e#9528#9529#0" expanded="true" />
-                <element signature="e#9564#9565#0" expanded="true" />
-                <element signature="e#9597#9598#0" expanded="true" />
-                <element signature="e#9626#9627#0" expanded="true" />
-                <element signature="e#9670#9671#0" expanded="true" />
-                <element signature="e#9706#9707#0" expanded="true" />
+                <element signature="e#12273#12274#0" expanded="true" />
+                <element signature="e#12302#12303#0" expanded="true" />
+                <element signature="e#12346#12347#0" expanded="true" />
+                <element signature="e#12382#12383#0" expanded="true" />
+                <element signature="e#12419#12420#0" expanded="true" />
+                <element signature="e#12452#12453#0" expanded="true" />
+                <element signature="e#12504#12505#0" expanded="true" />
+                <element signature="e#12548#12549#0" expanded="true" />
+                <element signature="e#12581#12582#0" expanded="true" />
+                <element signature="e#12610#12611#0" expanded="true" />
+                <element signature="e#12654#12655#0" expanded="true" />
+                <element signature="e#12690#12691#0" expanded="true" />
+                <element signature="e#12723#12724#0" expanded="true" />
+                <element signature="e#12752#12753#0" expanded="true" />
+                <element signature="e#12796#12797#0" expanded="true" />
+                <element signature="e#12832#12833#0" expanded="true" />
+                <element signature="e#12865#12866#0" expanded="true" />
+                <element signature="e#12894#12895#0" expanded="true" />
+                <element signature="e#12938#12939#0" expanded="true" />
+                <element signature="e#12974#12975#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,18 +67,54 @@
       <file leaf-file-name="Hospedaje.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Hospedaje.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="221">
+              <caret line="77" column="19" lean-forward="false" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cliente.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ruta.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/transporte/Ruta.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="177" column="35" lean-forward="true" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3034#3035#0" expanded="true" />
+                <element signature="e#3063#3064#0" expanded="true" />
+                <element signature="e#3107#3108#0" expanded="true" />
+                <element signature="e#3143#3144#0" expanded="true" />
+                <element signature="e#3180#3181#0" expanded="true" />
+                <element signature="e#3212#3213#0" expanded="true" />
+                <element signature="e#3263#3264#0" expanded="true" />
+                <element signature="e#3305#3306#0" expanded="true" />
+                <element signature="e#3333#3334#0" expanded="true" />
+                <element signature="e#3360#3361#0" expanded="true" />
+                <element signature="e#3397#3398#0" expanded="true" />
+                <element signature="e#3429#3430#0" expanded="true" />
+                <element signature="e#3459#3460#0" expanded="true" />
+                <element signature="e#3488#3489#0" expanded="true" />
+                <element signature="e#3529#3530#0" expanded="true" />
+                <element signature="e#3565#3566#0" expanded="true" />
+                <element signature="e#3595#3596#0" expanded="true" />
+                <element signature="e#3623#3624#0" expanded="true" />
+                <element signature="e#3663#3664#0" expanded="true" />
+                <element signature="e#3697#3698#0" expanded="true" />
+                <marker date="1521534541502" expanded="true" signature="3819:3927" ph="INSERT INTO ruta... " />
+                <marker date="1521534541502" expanded="true" signature="3973:4076" ph="UPDATE ruta... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cliente.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2198">
-              <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3859#3860#0" expanded="true" />
@@ -124,11 +159,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Model.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="243">
+              <caret line="52" column="47" lean-forward="true" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,40 +178,6 @@
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Ruta.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/transporte/Ruta.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="51" column="9" lean-forward="false" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2523#2524#0" expanded="true" />
-                <element signature="e#2552#2553#0" expanded="true" />
-                <element signature="e#2596#2597#0" expanded="true" />
-                <element signature="e#2632#2633#0" expanded="true" />
-                <element signature="e#2669#2670#0" expanded="true" />
-                <element signature="e#2701#2702#0" expanded="true" />
-                <element signature="e#2752#2753#0" expanded="true" />
-                <element signature="e#2794#2795#0" expanded="true" />
-                <element signature="e#2822#2823#0" expanded="true" />
-                <element signature="e#2849#2850#0" expanded="true" />
-                <element signature="e#2886#2887#0" expanded="true" />
-                <element signature="e#2918#2919#0" expanded="true" />
-                <element signature="e#2950#2951#0" expanded="true" />
-                <element signature="e#2979#2980#0" expanded="true" />
-                <element signature="e#3022#3023#0" expanded="true" />
-                <element signature="e#3058#3059#0" expanded="true" />
-                <element signature="e#3088#3089#0" expanded="true" />
-                <element signature="e#3116#3117#0" expanded="true" />
-                <element signature="e#3156#3157#0" expanded="true" />
-                <element signature="e#3190#3191#0" expanded="true" />
-                <marker date="1521304908258" expanded="true" signature="3332:3430" ph="INSERT INTO ruta... " />
-                <marker date="1521304908258" expanded="true" signature="3476:3579" ph="UPDATE ruta... " />
               </folding>
             </state>
           </provider>
@@ -257,19 +258,19 @@
         <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/MainWindow.form" />
         <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Transporte.java" />
         <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/transporte/Transporte.java" />
-        <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Hospedaje.java" />
         <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Usuario.java" />
         <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Usuario.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="F:/Respaldo ubuntu/2/Programming/Java/dbtest/src/com/test/dbtest/DbTest.java" />
         <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Posada.java" />
         <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Campamento.java" />
-        <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/transporte/Ruta.java" />
         <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Residencia.java" />
         <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Proveedor.java" />
-        <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Model.java" />
         <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Hospedaje.java" />
         <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java" />
+        <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/transporte/Ruta.java" />
+        <option value="$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Model.java" />
       </list>
     </option>
   </component>
@@ -301,8 +302,9 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,7 +338,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -498,16 +499,16 @@
       <workItem from="1521463814253" duration="4299000" />
       <workItem from="1521480598531" duration="591000" />
       <workItem from="1521483692802" duration="20000" />
-      <workItem from="1521500253651" duration="6531000" />
+      <workItem from="1521500253651" duration="12528000" />
+      <workItem from="1521532185051" duration="2427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89410000" />
+    <option name="totallyTimeSpent" value="97834000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="7" width="1360" height="758" extended-state="6" />
-    <editor active="true" />
+    <frame x="75" y="41" width="1360" height="758" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -517,8 +518,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32732734" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32732734" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -528,8 +529,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -555,26 +556,26 @@
           <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1204#1205#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#1386#1387#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1563#1564#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1696#1697#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-            <element signature="e#1836#1837#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="false" />
+            <element signature="e#1136#1137#0" expanded="false" />
+            <element signature="e#1174#1175#0" expanded="false" />
+            <element signature="e#1204#1205#0" expanded="false" />
+            <element signature="e#1239#1240#0" expanded="false" />
+            <element signature="e#1269#1270#0" expanded="false" />
+            <element signature="e#1316#1317#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
+            <element signature="e#1386#1387#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1458#1459#0" expanded="false" />
+            <element signature="e#1494#1495#0" expanded="false" />
+            <element signature="e#1531#1532#0" expanded="false" />
+            <element signature="e#1563#1564#0" expanded="false" />
+            <element signature="e#1614#1615#0" expanded="false" />
+            <element signature="e#1656#1657#0" expanded="false" />
+            <element signature="e#1696#1697#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1788#1789#0" expanded="false" />
+            <element signature="e#1836#1837#0" expanded="false" />
             <marker date="1521246461867" expanded="true" signature="1956:2043" ph="INSERT INTO posada... " />
             <marker date="1521246461867" expanded="true" signature="2089:2171" ph="UPDATE posada... " />
           </folding>
@@ -587,26 +588,26 @@
           <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9005#9006#0" expanded="true" />
-            <element signature="e#9034#9035#0" expanded="true" />
-            <element signature="e#9078#9079#0" expanded="true" />
-            <element signature="e#9114#9115#0" expanded="true" />
-            <element signature="e#9151#9152#0" expanded="true" />
-            <element signature="e#9184#9185#0" expanded="true" />
-            <element signature="e#9236#9237#0" expanded="true" />
-            <element signature="e#9280#9281#0" expanded="true" />
-            <element signature="e#9313#9314#0" expanded="true" />
-            <element signature="e#9342#9343#0" expanded="true" />
-            <element signature="e#9386#9387#0" expanded="true" />
-            <element signature="e#9422#9423#0" expanded="true" />
-            <element signature="e#9455#9456#0" expanded="true" />
-            <element signature="e#9484#9485#0" expanded="true" />
-            <element signature="e#9528#9529#0" expanded="true" />
-            <element signature="e#9564#9565#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
-            <element signature="e#9626#9627#0" expanded="true" />
-            <element signature="e#9670#9671#0" expanded="true" />
-            <element signature="e#9706#9707#0" expanded="true" />
+            <element signature="e#12273#12274#0" expanded="true" />
+            <element signature="e#12302#12303#0" expanded="true" />
+            <element signature="e#12346#12347#0" expanded="true" />
+            <element signature="e#12382#12383#0" expanded="true" />
+            <element signature="e#12419#12420#0" expanded="true" />
+            <element signature="e#12452#12453#0" expanded="true" />
+            <element signature="e#12504#12505#0" expanded="true" />
+            <element signature="e#12548#12549#0" expanded="true" />
+            <element signature="e#12581#12582#0" expanded="true" />
+            <element signature="e#12610#12611#0" expanded="true" />
+            <element signature="e#12654#12655#0" expanded="true" />
+            <element signature="e#12690#12691#0" expanded="true" />
+            <element signature="e#12723#12724#0" expanded="true" />
+            <element signature="e#12752#12753#0" expanded="true" />
+            <element signature="e#12796#12797#0" expanded="true" />
+            <element signature="e#12832#12833#0" expanded="true" />
+            <element signature="e#12865#12866#0" expanded="true" />
+            <element signature="e#12894#12895#0" expanded="true" />
+            <element signature="e#12938#12939#0" expanded="true" />
+            <element signature="e#12974#12975#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -627,22 +628,22 @@
           <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2575#2576#0" expanded="true" />
-            <element signature="e#2601#2602#0" expanded="true" />
-            <element signature="e#2639#2640#0" expanded="true" />
-            <element signature="e#2669#2670#0" expanded="true" />
-            <element signature="e#2702#2703#0" expanded="true" />
-            <element signature="e#2734#2735#0" expanded="true" />
-            <element signature="e#2781#2782#0" expanded="true" />
-            <element signature="e#2823#2824#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2882#2883#0" expanded="true" />
-            <element signature="e#2923#2924#0" expanded="true" />
-            <element signature="e#2959#2960#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
-            <element signature="e#3047#3048#0" expanded="true" />
-            <element signature="e#3118#3119#0" expanded="true" />
-            <element signature="e#3180#3181#0" expanded="true" />
+            <element signature="e#2575#2576#0" expanded="false" />
+            <element signature="e#2601#2602#0" expanded="false" />
+            <element signature="e#2639#2640#0" expanded="false" />
+            <element signature="e#2669#2670#0" expanded="false" />
+            <element signature="e#2702#2703#0" expanded="false" />
+            <element signature="e#2734#2735#0" expanded="false" />
+            <element signature="e#2781#2782#0" expanded="false" />
+            <element signature="e#2823#2824#0" expanded="false" />
+            <element signature="e#2853#2854#0" expanded="false" />
+            <element signature="e#2882#2883#0" expanded="false" />
+            <element signature="e#2923#2924#0" expanded="false" />
+            <element signature="e#2959#2960#0" expanded="false" />
+            <element signature="e#3005#3006#0" expanded="false" />
+            <element signature="e#3047#3048#0" expanded="false" />
+            <element signature="e#3118#3119#0" expanded="false" />
+            <element signature="e#3180#3181#0" expanded="false" />
             <marker date="1521304905450" expanded="true" signature="1268:1304" ph="SELECT * FRO... campamento" />
             <marker date="1521304905450" expanded="true" signature="2053:2140" ph="INSERT INTO campamento... " />
             <marker date="1521304905450" expanded="true" signature="2187:2270" ph="UPDATE campamento... " />
@@ -656,28 +657,28 @@
           <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
-            <element signature="e#2552#2553#0" expanded="true" />
-            <element signature="e#2596#2597#0" expanded="true" />
-            <element signature="e#2632#2633#0" expanded="true" />
-            <element signature="e#2669#2670#0" expanded="true" />
-            <element signature="e#2701#2702#0" expanded="true" />
-            <element signature="e#2752#2753#0" expanded="true" />
-            <element signature="e#2794#2795#0" expanded="true" />
-            <element signature="e#2822#2823#0" expanded="true" />
-            <element signature="e#2849#2850#0" expanded="true" />
-            <element signature="e#2886#2887#0" expanded="true" />
-            <element signature="e#2918#2919#0" expanded="true" />
-            <element signature="e#2950#2951#0" expanded="true" />
-            <element signature="e#2979#2980#0" expanded="true" />
-            <element signature="e#3022#3023#0" expanded="true" />
-            <element signature="e#3058#3059#0" expanded="true" />
-            <element signature="e#3088#3089#0" expanded="true" />
-            <element signature="e#3116#3117#0" expanded="true" />
-            <element signature="e#3156#3157#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-            <marker date="1521304908258" expanded="true" signature="3332:3430" ph="INSERT INTO ruta... " />
-            <marker date="1521304908258" expanded="true" signature="3476:3579" ph="UPDATE ruta... " />
+            <element signature="e#3034#3035#0" expanded="true" />
+            <element signature="e#3063#3064#0" expanded="true" />
+            <element signature="e#3107#3108#0" expanded="true" />
+            <element signature="e#3143#3144#0" expanded="true" />
+            <element signature="e#3180#3181#0" expanded="true" />
+            <element signature="e#3212#3213#0" expanded="true" />
+            <element signature="e#3263#3264#0" expanded="true" />
+            <element signature="e#3305#3306#0" expanded="true" />
+            <element signature="e#3333#3334#0" expanded="true" />
+            <element signature="e#3360#3361#0" expanded="true" />
+            <element signature="e#3397#3398#0" expanded="true" />
+            <element signature="e#3429#3430#0" expanded="true" />
+            <element signature="e#3459#3460#0" expanded="true" />
+            <element signature="e#3488#3489#0" expanded="true" />
+            <element signature="e#3529#3530#0" expanded="true" />
+            <element signature="e#3565#3566#0" expanded="true" />
+            <element signature="e#3595#3596#0" expanded="true" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3663#3664#0" expanded="true" />
+            <element signature="e#3697#3698#0" expanded="true" />
+            <marker date="1521534541502" expanded="true" signature="3819:3927" ph="INSERT INTO ruta... " />
+            <marker date="1521534541502" expanded="true" signature="3973:4076" ph="UPDATE ruta... " />
           </folding>
         </state>
       </provider>
@@ -738,14 +739,14 @@
           <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2629#2630#0" expanded="true" />
-            <element signature="e#2661#2662#0" expanded="true" />
-            <element signature="e#2711#2712#0" expanded="true" />
-            <element signature="e#2753#2754#0" expanded="true" />
-            <element signature="e#2783#2784#0" expanded="true" />
-            <element signature="e#2812#2813#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2889#2890#0" expanded="true" />
+            <element signature="e#2629#2630#0" expanded="false" />
+            <element signature="e#2661#2662#0" expanded="false" />
+            <element signature="e#2711#2712#0" expanded="false" />
+            <element signature="e#2753#2754#0" expanded="false" />
+            <element signature="e#2783#2784#0" expanded="false" />
+            <element signature="e#2812#2813#0" expanded="false" />
+            <element signature="e#2853#2854#0" expanded="false" />
+            <element signature="e#2889#2890#0" expanded="false" />
             <marker date="1521304913493" expanded="true" signature="1765:1833" ph="INSERT INTO residencia... " />
             <marker date="1521304913493" expanded="true" signature="1765:1849" ph="INSERT INTO residencia... " />
             <marker date="1521304913493" expanded="true" signature="1895:1962" ph="UPDATE residencia... " />
@@ -760,26 +761,26 @@
           <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1204#1205#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#1386#1387#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1563#1564#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1696#1697#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-            <element signature="e#1836#1837#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="false" />
+            <element signature="e#1136#1137#0" expanded="false" />
+            <element signature="e#1174#1175#0" expanded="false" />
+            <element signature="e#1204#1205#0" expanded="false" />
+            <element signature="e#1239#1240#0" expanded="false" />
+            <element signature="e#1269#1270#0" expanded="false" />
+            <element signature="e#1316#1317#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
+            <element signature="e#1386#1387#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1458#1459#0" expanded="false" />
+            <element signature="e#1494#1495#0" expanded="false" />
+            <element signature="e#1531#1532#0" expanded="false" />
+            <element signature="e#1563#1564#0" expanded="false" />
+            <element signature="e#1614#1615#0" expanded="false" />
+            <element signature="e#1656#1657#0" expanded="false" />
+            <element signature="e#1696#1697#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1788#1789#0" expanded="false" />
+            <element signature="e#1836#1837#0" expanded="false" />
             <marker date="1521246461867" expanded="true" signature="1956:2043" ph="INSERT INTO posada... " />
             <marker date="1521246461867" expanded="true" signature="2089:2171" ph="UPDATE posada... " />
           </folding>
@@ -839,26 +840,26 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9005#9006#0" expanded="true" />
-            <element signature="e#9034#9035#0" expanded="true" />
-            <element signature="e#9078#9079#0" expanded="true" />
-            <element signature="e#9114#9115#0" expanded="true" />
-            <element signature="e#9151#9152#0" expanded="true" />
-            <element signature="e#9184#9185#0" expanded="true" />
-            <element signature="e#9236#9237#0" expanded="true" />
-            <element signature="e#9280#9281#0" expanded="true" />
-            <element signature="e#9313#9314#0" expanded="true" />
-            <element signature="e#9342#9343#0" expanded="true" />
-            <element signature="e#9386#9387#0" expanded="true" />
-            <element signature="e#9422#9423#0" expanded="true" />
-            <element signature="e#9455#9456#0" expanded="true" />
-            <element signature="e#9484#9485#0" expanded="true" />
-            <element signature="e#9528#9529#0" expanded="true" />
-            <element signature="e#9564#9565#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
-            <element signature="e#9626#9627#0" expanded="true" />
-            <element signature="e#9670#9671#0" expanded="true" />
-            <element signature="e#9706#9707#0" expanded="true" />
+            <element signature="e#12273#12274#0" expanded="true" />
+            <element signature="e#12302#12303#0" expanded="true" />
+            <element signature="e#12346#12347#0" expanded="true" />
+            <element signature="e#12382#12383#0" expanded="true" />
+            <element signature="e#12419#12420#0" expanded="true" />
+            <element signature="e#12452#12453#0" expanded="true" />
+            <element signature="e#12504#12505#0" expanded="true" />
+            <element signature="e#12548#12549#0" expanded="true" />
+            <element signature="e#12581#12582#0" expanded="true" />
+            <element signature="e#12610#12611#0" expanded="true" />
+            <element signature="e#12654#12655#0" expanded="true" />
+            <element signature="e#12690#12691#0" expanded="true" />
+            <element signature="e#12723#12724#0" expanded="true" />
+            <element signature="e#12752#12753#0" expanded="true" />
+            <element signature="e#12796#12797#0" expanded="true" />
+            <element signature="e#12832#12833#0" expanded="true" />
+            <element signature="e#12865#12866#0" expanded="true" />
+            <element signature="e#12894#12895#0" expanded="true" />
+            <element signature="e#12938#12939#0" expanded="true" />
+            <element signature="e#12974#12975#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -916,22 +917,22 @@
           <caret line="35" column="36" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2575#2576#0" expanded="true" />
-            <element signature="e#2601#2602#0" expanded="true" />
-            <element signature="e#2639#2640#0" expanded="true" />
-            <element signature="e#2669#2670#0" expanded="true" />
-            <element signature="e#2702#2703#0" expanded="true" />
-            <element signature="e#2734#2735#0" expanded="true" />
-            <element signature="e#2781#2782#0" expanded="true" />
-            <element signature="e#2823#2824#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2882#2883#0" expanded="true" />
-            <element signature="e#2923#2924#0" expanded="true" />
-            <element signature="e#2959#2960#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
-            <element signature="e#3047#3048#0" expanded="true" />
-            <element signature="e#3118#3119#0" expanded="true" />
-            <element signature="e#3180#3181#0" expanded="true" />
+            <element signature="e#2575#2576#0" expanded="false" />
+            <element signature="e#2601#2602#0" expanded="false" />
+            <element signature="e#2639#2640#0" expanded="false" />
+            <element signature="e#2669#2670#0" expanded="false" />
+            <element signature="e#2702#2703#0" expanded="false" />
+            <element signature="e#2734#2735#0" expanded="false" />
+            <element signature="e#2781#2782#0" expanded="false" />
+            <element signature="e#2823#2824#0" expanded="false" />
+            <element signature="e#2853#2854#0" expanded="false" />
+            <element signature="e#2882#2883#0" expanded="false" />
+            <element signature="e#2923#2924#0" expanded="false" />
+            <element signature="e#2959#2960#0" expanded="false" />
+            <element signature="e#3005#3006#0" expanded="false" />
+            <element signature="e#3047#3048#0" expanded="false" />
+            <element signature="e#3118#3119#0" expanded="false" />
+            <element signature="e#3180#3181#0" expanded="false" />
             <marker date="1521304905450" expanded="true" signature="1268:1304" ph="SELECT * FRO... campamento" />
             <marker date="1521304905450" expanded="true" signature="2053:2140" ph="INSERT INTO campamento... " />
             <marker date="1521304905450" expanded="true" signature="2187:2270" ph="UPDATE campamento... " />
@@ -945,28 +946,28 @@
           <caret line="50" column="36" lean-forward="false" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
-            <element signature="e#2552#2553#0" expanded="true" />
-            <element signature="e#2596#2597#0" expanded="true" />
-            <element signature="e#2632#2633#0" expanded="true" />
-            <element signature="e#2669#2670#0" expanded="true" />
-            <element signature="e#2701#2702#0" expanded="true" />
-            <element signature="e#2752#2753#0" expanded="true" />
-            <element signature="e#2794#2795#0" expanded="true" />
-            <element signature="e#2822#2823#0" expanded="true" />
-            <element signature="e#2849#2850#0" expanded="true" />
-            <element signature="e#2886#2887#0" expanded="true" />
-            <element signature="e#2918#2919#0" expanded="true" />
-            <element signature="e#2950#2951#0" expanded="true" />
-            <element signature="e#2979#2980#0" expanded="true" />
-            <element signature="e#3022#3023#0" expanded="true" />
-            <element signature="e#3058#3059#0" expanded="true" />
-            <element signature="e#3088#3089#0" expanded="true" />
-            <element signature="e#3116#3117#0" expanded="true" />
-            <element signature="e#3156#3157#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-            <marker date="1521304908258" expanded="true" signature="3332:3430" ph="INSERT INTO ruta... " />
-            <marker date="1521304908258" expanded="true" signature="3476:3579" ph="UPDATE ruta... " />
+            <element signature="e#3034#3035#0" expanded="true" />
+            <element signature="e#3063#3064#0" expanded="true" />
+            <element signature="e#3107#3108#0" expanded="true" />
+            <element signature="e#3143#3144#0" expanded="true" />
+            <element signature="e#3180#3181#0" expanded="true" />
+            <element signature="e#3212#3213#0" expanded="true" />
+            <element signature="e#3263#3264#0" expanded="true" />
+            <element signature="e#3305#3306#0" expanded="true" />
+            <element signature="e#3333#3334#0" expanded="true" />
+            <element signature="e#3360#3361#0" expanded="true" />
+            <element signature="e#3397#3398#0" expanded="true" />
+            <element signature="e#3429#3430#0" expanded="true" />
+            <element signature="e#3459#3460#0" expanded="true" />
+            <element signature="e#3488#3489#0" expanded="true" />
+            <element signature="e#3529#3530#0" expanded="true" />
+            <element signature="e#3565#3566#0" expanded="true" />
+            <element signature="e#3595#3596#0" expanded="true" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3663#3664#0" expanded="true" />
+            <element signature="e#3697#3698#0" expanded="true" />
+            <marker date="1521534541502" expanded="true" signature="3819:3927" ph="INSERT INTO ruta... " />
+            <marker date="1521534541502" expanded="true" signature="3973:4076" ph="UPDATE ruta... " />
           </folding>
         </state>
       </provider>
@@ -1027,14 +1028,14 @@
           <caret line="31" column="36" lean-forward="false" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2629#2630#0" expanded="true" />
-            <element signature="e#2661#2662#0" expanded="true" />
-            <element signature="e#2711#2712#0" expanded="true" />
-            <element signature="e#2753#2754#0" expanded="true" />
-            <element signature="e#2783#2784#0" expanded="true" />
-            <element signature="e#2812#2813#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2889#2890#0" expanded="true" />
+            <element signature="e#2629#2630#0" expanded="false" />
+            <element signature="e#2661#2662#0" expanded="false" />
+            <element signature="e#2711#2712#0" expanded="false" />
+            <element signature="e#2753#2754#0" expanded="false" />
+            <element signature="e#2783#2784#0" expanded="false" />
+            <element signature="e#2812#2813#0" expanded="false" />
+            <element signature="e#2853#2854#0" expanded="false" />
+            <element signature="e#2889#2890#0" expanded="false" />
             <marker date="1521304913493" expanded="true" signature="1765:1833" ph="INSERT INTO residencia... " />
             <marker date="1521304913493" expanded="true" signature="1765:1849" ph="INSERT INTO residencia... " />
             <marker date="1521304913493" expanded="true" signature="1895:1962" ph="UPDATE residencia... " />
@@ -1049,26 +1050,26 @@
           <caret line="82" column="5" lean-forward="false" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1204#1205#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#1386#1387#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1563#1564#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1696#1697#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-            <element signature="e#1836#1837#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="false" />
+            <element signature="e#1136#1137#0" expanded="false" />
+            <element signature="e#1174#1175#0" expanded="false" />
+            <element signature="e#1204#1205#0" expanded="false" />
+            <element signature="e#1239#1240#0" expanded="false" />
+            <element signature="e#1269#1270#0" expanded="false" />
+            <element signature="e#1316#1317#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
+            <element signature="e#1386#1387#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1458#1459#0" expanded="false" />
+            <element signature="e#1494#1495#0" expanded="false" />
+            <element signature="e#1531#1532#0" expanded="false" />
+            <element signature="e#1563#1564#0" expanded="false" />
+            <element signature="e#1614#1615#0" expanded="false" />
+            <element signature="e#1656#1657#0" expanded="false" />
+            <element signature="e#1696#1697#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1788#1789#0" expanded="false" />
+            <element signature="e#1836#1837#0" expanded="false" />
             <marker date="1521246461867" expanded="true" signature="1956:2043" ph="INSERT INTO posada... " />
             <marker date="1521246461867" expanded="true" signature="2089:2171" ph="UPDATE posada... " />
           </folding>
@@ -1081,26 +1082,26 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9005#9006#0" expanded="true" />
-            <element signature="e#9034#9035#0" expanded="true" />
-            <element signature="e#9078#9079#0" expanded="true" />
-            <element signature="e#9114#9115#0" expanded="true" />
-            <element signature="e#9151#9152#0" expanded="true" />
-            <element signature="e#9184#9185#0" expanded="true" />
-            <element signature="e#9236#9237#0" expanded="true" />
-            <element signature="e#9280#9281#0" expanded="true" />
-            <element signature="e#9313#9314#0" expanded="true" />
-            <element signature="e#9342#9343#0" expanded="true" />
-            <element signature="e#9386#9387#0" expanded="true" />
-            <element signature="e#9422#9423#0" expanded="true" />
-            <element signature="e#9455#9456#0" expanded="true" />
-            <element signature="e#9484#9485#0" expanded="true" />
-            <element signature="e#9528#9529#0" expanded="true" />
-            <element signature="e#9564#9565#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
-            <element signature="e#9626#9627#0" expanded="true" />
-            <element signature="e#9670#9671#0" expanded="true" />
-            <element signature="e#9706#9707#0" expanded="true" />
+            <element signature="e#12273#12274#0" expanded="true" />
+            <element signature="e#12302#12303#0" expanded="true" />
+            <element signature="e#12346#12347#0" expanded="true" />
+            <element signature="e#12382#12383#0" expanded="true" />
+            <element signature="e#12419#12420#0" expanded="true" />
+            <element signature="e#12452#12453#0" expanded="true" />
+            <element signature="e#12504#12505#0" expanded="true" />
+            <element signature="e#12548#12549#0" expanded="true" />
+            <element signature="e#12581#12582#0" expanded="true" />
+            <element signature="e#12610#12611#0" expanded="true" />
+            <element signature="e#12654#12655#0" expanded="true" />
+            <element signature="e#12690#12691#0" expanded="true" />
+            <element signature="e#12723#12724#0" expanded="true" />
+            <element signature="e#12752#12753#0" expanded="true" />
+            <element signature="e#12796#12797#0" expanded="true" />
+            <element signature="e#12832#12833#0" expanded="true" />
+            <element signature="e#12865#12866#0" expanded="true" />
+            <element signature="e#12894#12895#0" expanded="true" />
+            <element signature="e#12938#12939#0" expanded="true" />
+            <element signature="e#12974#12975#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1158,22 +1159,22 @@
           <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2575#2576#0" expanded="true" />
-            <element signature="e#2601#2602#0" expanded="true" />
-            <element signature="e#2639#2640#0" expanded="true" />
-            <element signature="e#2669#2670#0" expanded="true" />
-            <element signature="e#2702#2703#0" expanded="true" />
-            <element signature="e#2734#2735#0" expanded="true" />
-            <element signature="e#2781#2782#0" expanded="true" />
-            <element signature="e#2823#2824#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2882#2883#0" expanded="true" />
-            <element signature="e#2923#2924#0" expanded="true" />
-            <element signature="e#2959#2960#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
-            <element signature="e#3047#3048#0" expanded="true" />
-            <element signature="e#3118#3119#0" expanded="true" />
-            <element signature="e#3180#3181#0" expanded="true" />
+            <element signature="e#2575#2576#0" expanded="false" />
+            <element signature="e#2601#2602#0" expanded="false" />
+            <element signature="e#2639#2640#0" expanded="false" />
+            <element signature="e#2669#2670#0" expanded="false" />
+            <element signature="e#2702#2703#0" expanded="false" />
+            <element signature="e#2734#2735#0" expanded="false" />
+            <element signature="e#2781#2782#0" expanded="false" />
+            <element signature="e#2823#2824#0" expanded="false" />
+            <element signature="e#2853#2854#0" expanded="false" />
+            <element signature="e#2882#2883#0" expanded="false" />
+            <element signature="e#2923#2924#0" expanded="false" />
+            <element signature="e#2959#2960#0" expanded="false" />
+            <element signature="e#3005#3006#0" expanded="false" />
+            <element signature="e#3047#3048#0" expanded="false" />
+            <element signature="e#3118#3119#0" expanded="false" />
+            <element signature="e#3180#3181#0" expanded="false" />
             <marker date="1521304905450" expanded="true" signature="1268:1304" ph="SELECT * FRO... campamento" />
             <marker date="1521304905450" expanded="true" signature="2053:2140" ph="INSERT INTO campamento... " />
             <marker date="1521304905450" expanded="true" signature="2187:2270" ph="UPDATE campamento... " />
@@ -1187,28 +1188,28 @@
           <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
-            <element signature="e#2552#2553#0" expanded="true" />
-            <element signature="e#2596#2597#0" expanded="true" />
-            <element signature="e#2632#2633#0" expanded="true" />
-            <element signature="e#2669#2670#0" expanded="true" />
-            <element signature="e#2701#2702#0" expanded="true" />
-            <element signature="e#2752#2753#0" expanded="true" />
-            <element signature="e#2794#2795#0" expanded="true" />
-            <element signature="e#2822#2823#0" expanded="true" />
-            <element signature="e#2849#2850#0" expanded="true" />
-            <element signature="e#2886#2887#0" expanded="true" />
-            <element signature="e#2918#2919#0" expanded="true" />
-            <element signature="e#2950#2951#0" expanded="true" />
-            <element signature="e#2979#2980#0" expanded="true" />
-            <element signature="e#3022#3023#0" expanded="true" />
-            <element signature="e#3058#3059#0" expanded="true" />
-            <element signature="e#3088#3089#0" expanded="true" />
-            <element signature="e#3116#3117#0" expanded="true" />
-            <element signature="e#3156#3157#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-            <marker date="1521304908258" expanded="true" signature="3332:3430" ph="INSERT INTO ruta... " />
-            <marker date="1521304908258" expanded="true" signature="3476:3579" ph="UPDATE ruta... " />
+            <element signature="e#3034#3035#0" expanded="true" />
+            <element signature="e#3063#3064#0" expanded="true" />
+            <element signature="e#3107#3108#0" expanded="true" />
+            <element signature="e#3143#3144#0" expanded="true" />
+            <element signature="e#3180#3181#0" expanded="true" />
+            <element signature="e#3212#3213#0" expanded="true" />
+            <element signature="e#3263#3264#0" expanded="true" />
+            <element signature="e#3305#3306#0" expanded="true" />
+            <element signature="e#3333#3334#0" expanded="true" />
+            <element signature="e#3360#3361#0" expanded="true" />
+            <element signature="e#3397#3398#0" expanded="true" />
+            <element signature="e#3429#3430#0" expanded="true" />
+            <element signature="e#3459#3460#0" expanded="true" />
+            <element signature="e#3488#3489#0" expanded="true" />
+            <element signature="e#3529#3530#0" expanded="true" />
+            <element signature="e#3565#3566#0" expanded="true" />
+            <element signature="e#3595#3596#0" expanded="true" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3663#3664#0" expanded="true" />
+            <element signature="e#3697#3698#0" expanded="true" />
+            <marker date="1521534541502" expanded="true" signature="3819:3927" ph="INSERT INTO ruta... " />
+            <marker date="1521534541502" expanded="true" signature="3973:4076" ph="UPDATE ruta... " />
           </folding>
         </state>
       </provider>
@@ -1269,14 +1270,14 @@
           <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2629#2630#0" expanded="true" />
-            <element signature="e#2661#2662#0" expanded="true" />
-            <element signature="e#2711#2712#0" expanded="true" />
-            <element signature="e#2753#2754#0" expanded="true" />
-            <element signature="e#2783#2784#0" expanded="true" />
-            <element signature="e#2812#2813#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2889#2890#0" expanded="true" />
+            <element signature="e#2629#2630#0" expanded="false" />
+            <element signature="e#2661#2662#0" expanded="false" />
+            <element signature="e#2711#2712#0" expanded="false" />
+            <element signature="e#2753#2754#0" expanded="false" />
+            <element signature="e#2783#2784#0" expanded="false" />
+            <element signature="e#2812#2813#0" expanded="false" />
+            <element signature="e#2853#2854#0" expanded="false" />
+            <element signature="e#2889#2890#0" expanded="false" />
             <marker date="1521304913493" expanded="true" signature="1765:1833" ph="INSERT INTO residencia... " />
             <marker date="1521304913493" expanded="true" signature="1765:1849" ph="INSERT INTO residencia... " />
             <marker date="1521304913493" expanded="true" signature="1895:1962" ph="UPDATE residencia... " />
@@ -1291,26 +1292,26 @@
           <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1204#1205#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#1386#1387#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1563#1564#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1696#1697#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-            <element signature="e#1836#1837#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="false" />
+            <element signature="e#1136#1137#0" expanded="false" />
+            <element signature="e#1174#1175#0" expanded="false" />
+            <element signature="e#1204#1205#0" expanded="false" />
+            <element signature="e#1239#1240#0" expanded="false" />
+            <element signature="e#1269#1270#0" expanded="false" />
+            <element signature="e#1316#1317#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
+            <element signature="e#1386#1387#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1458#1459#0" expanded="false" />
+            <element signature="e#1494#1495#0" expanded="false" />
+            <element signature="e#1531#1532#0" expanded="false" />
+            <element signature="e#1563#1564#0" expanded="false" />
+            <element signature="e#1614#1615#0" expanded="false" />
+            <element signature="e#1656#1657#0" expanded="false" />
+            <element signature="e#1696#1697#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1788#1789#0" expanded="false" />
+            <element signature="e#1836#1837#0" expanded="false" />
             <marker date="1521246461867" expanded="true" signature="1956:2043" ph="INSERT INTO posada... " />
             <marker date="1521246461867" expanded="true" signature="2089:2171" ph="UPDATE posada... " />
           </folding>
@@ -1323,26 +1324,26 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9005#9006#0" expanded="true" />
-            <element signature="e#9034#9035#0" expanded="true" />
-            <element signature="e#9078#9079#0" expanded="true" />
-            <element signature="e#9114#9115#0" expanded="true" />
-            <element signature="e#9151#9152#0" expanded="true" />
-            <element signature="e#9184#9185#0" expanded="true" />
-            <element signature="e#9236#9237#0" expanded="true" />
-            <element signature="e#9280#9281#0" expanded="true" />
-            <element signature="e#9313#9314#0" expanded="true" />
-            <element signature="e#9342#9343#0" expanded="true" />
-            <element signature="e#9386#9387#0" expanded="true" />
-            <element signature="e#9422#9423#0" expanded="true" />
-            <element signature="e#9455#9456#0" expanded="true" />
-            <element signature="e#9484#9485#0" expanded="true" />
-            <element signature="e#9528#9529#0" expanded="true" />
-            <element signature="e#9564#9565#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
-            <element signature="e#9626#9627#0" expanded="true" />
-            <element signature="e#9670#9671#0" expanded="true" />
-            <element signature="e#9706#9707#0" expanded="true" />
+            <element signature="e#12273#12274#0" expanded="true" />
+            <element signature="e#12302#12303#0" expanded="true" />
+            <element signature="e#12346#12347#0" expanded="true" />
+            <element signature="e#12382#12383#0" expanded="true" />
+            <element signature="e#12419#12420#0" expanded="true" />
+            <element signature="e#12452#12453#0" expanded="true" />
+            <element signature="e#12504#12505#0" expanded="true" />
+            <element signature="e#12548#12549#0" expanded="true" />
+            <element signature="e#12581#12582#0" expanded="true" />
+            <element signature="e#12610#12611#0" expanded="true" />
+            <element signature="e#12654#12655#0" expanded="true" />
+            <element signature="e#12690#12691#0" expanded="true" />
+            <element signature="e#12723#12724#0" expanded="true" />
+            <element signature="e#12752#12753#0" expanded="true" />
+            <element signature="e#12796#12797#0" expanded="true" />
+            <element signature="e#12832#12833#0" expanded="true" />
+            <element signature="e#12865#12866#0" expanded="true" />
+            <element signature="e#12894#12895#0" expanded="true" />
+            <element signature="e#12938#12939#0" expanded="true" />
+            <element signature="e#12974#12975#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1400,22 +1401,22 @@
           <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2575#2576#0" expanded="true" />
-            <element signature="e#2601#2602#0" expanded="true" />
-            <element signature="e#2639#2640#0" expanded="true" />
-            <element signature="e#2669#2670#0" expanded="true" />
-            <element signature="e#2702#2703#0" expanded="true" />
-            <element signature="e#2734#2735#0" expanded="true" />
-            <element signature="e#2781#2782#0" expanded="true" />
-            <element signature="e#2823#2824#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2882#2883#0" expanded="true" />
-            <element signature="e#2923#2924#0" expanded="true" />
-            <element signature="e#2959#2960#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
-            <element signature="e#3047#3048#0" expanded="true" />
-            <element signature="e#3118#3119#0" expanded="true" />
-            <element signature="e#3180#3181#0" expanded="true" />
+            <element signature="e#2575#2576#0" expanded="false" />
+            <element signature="e#2601#2602#0" expanded="false" />
+            <element signature="e#2639#2640#0" expanded="false" />
+            <element signature="e#2669#2670#0" expanded="false" />
+            <element signature="e#2702#2703#0" expanded="false" />
+            <element signature="e#2734#2735#0" expanded="false" />
+            <element signature="e#2781#2782#0" expanded="false" />
+            <element signature="e#2823#2824#0" expanded="false" />
+            <element signature="e#2853#2854#0" expanded="false" />
+            <element signature="e#2882#2883#0" expanded="false" />
+            <element signature="e#2923#2924#0" expanded="false" />
+            <element signature="e#2959#2960#0" expanded="false" />
+            <element signature="e#3005#3006#0" expanded="false" />
+            <element signature="e#3047#3048#0" expanded="false" />
+            <element signature="e#3118#3119#0" expanded="false" />
+            <element signature="e#3180#3181#0" expanded="false" />
             <marker date="1521304905450" expanded="true" signature="1268:1304" ph="SELECT * FRO... campamento" />
             <marker date="1521304905450" expanded="true" signature="2053:2140" ph="INSERT INTO campamento... " />
             <marker date="1521304905450" expanded="true" signature="2187:2270" ph="UPDATE campamento... " />
@@ -1429,28 +1430,28 @@
           <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
-            <element signature="e#2552#2553#0" expanded="true" />
-            <element signature="e#2596#2597#0" expanded="true" />
-            <element signature="e#2632#2633#0" expanded="true" />
-            <element signature="e#2669#2670#0" expanded="true" />
-            <element signature="e#2701#2702#0" expanded="true" />
-            <element signature="e#2752#2753#0" expanded="true" />
-            <element signature="e#2794#2795#0" expanded="true" />
-            <element signature="e#2822#2823#0" expanded="true" />
-            <element signature="e#2849#2850#0" expanded="true" />
-            <element signature="e#2886#2887#0" expanded="true" />
-            <element signature="e#2918#2919#0" expanded="true" />
-            <element signature="e#2950#2951#0" expanded="true" />
-            <element signature="e#2979#2980#0" expanded="true" />
-            <element signature="e#3022#3023#0" expanded="true" />
-            <element signature="e#3058#3059#0" expanded="true" />
-            <element signature="e#3088#3089#0" expanded="true" />
-            <element signature="e#3116#3117#0" expanded="true" />
-            <element signature="e#3156#3157#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-            <marker date="1521304908258" expanded="true" signature="3332:3430" ph="INSERT INTO ruta... " />
-            <marker date="1521304908258" expanded="true" signature="3476:3579" ph="UPDATE ruta... " />
+            <element signature="e#3034#3035#0" expanded="true" />
+            <element signature="e#3063#3064#0" expanded="true" />
+            <element signature="e#3107#3108#0" expanded="true" />
+            <element signature="e#3143#3144#0" expanded="true" />
+            <element signature="e#3180#3181#0" expanded="true" />
+            <element signature="e#3212#3213#0" expanded="true" />
+            <element signature="e#3263#3264#0" expanded="true" />
+            <element signature="e#3305#3306#0" expanded="true" />
+            <element signature="e#3333#3334#0" expanded="true" />
+            <element signature="e#3360#3361#0" expanded="true" />
+            <element signature="e#3397#3398#0" expanded="true" />
+            <element signature="e#3429#3430#0" expanded="true" />
+            <element signature="e#3459#3460#0" expanded="true" />
+            <element signature="e#3488#3489#0" expanded="true" />
+            <element signature="e#3529#3530#0" expanded="true" />
+            <element signature="e#3565#3566#0" expanded="true" />
+            <element signature="e#3595#3596#0" expanded="true" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3663#3664#0" expanded="true" />
+            <element signature="e#3697#3698#0" expanded="true" />
+            <marker date="1521534541502" expanded="true" signature="3819:3927" ph="INSERT INTO ruta... " />
+            <marker date="1521534541502" expanded="true" signature="3973:4076" ph="UPDATE ruta... " />
           </folding>
         </state>
       </provider>
@@ -1511,14 +1512,14 @@
           <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2629#2630#0" expanded="true" />
-            <element signature="e#2661#2662#0" expanded="true" />
-            <element signature="e#2711#2712#0" expanded="true" />
-            <element signature="e#2753#2754#0" expanded="true" />
-            <element signature="e#2783#2784#0" expanded="true" />
-            <element signature="e#2812#2813#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2889#2890#0" expanded="true" />
+            <element signature="e#2629#2630#0" expanded="false" />
+            <element signature="e#2661#2662#0" expanded="false" />
+            <element signature="e#2711#2712#0" expanded="false" />
+            <element signature="e#2753#2754#0" expanded="false" />
+            <element signature="e#2783#2784#0" expanded="false" />
+            <element signature="e#2812#2813#0" expanded="false" />
+            <element signature="e#2853#2854#0" expanded="false" />
+            <element signature="e#2889#2890#0" expanded="false" />
             <marker date="1521304913493" expanded="true" signature="1765:1833" ph="INSERT INTO residencia... " />
             <marker date="1521304913493" expanded="true" signature="1765:1849" ph="INSERT INTO residencia... " />
             <marker date="1521304913493" expanded="true" signature="1895:1962" ph="UPDATE residencia... " />
@@ -1533,26 +1534,26 @@
           <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1204#1205#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#1386#1387#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1563#1564#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1696#1697#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-            <element signature="e#1836#1837#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="false" />
+            <element signature="e#1136#1137#0" expanded="false" />
+            <element signature="e#1174#1175#0" expanded="false" />
+            <element signature="e#1204#1205#0" expanded="false" />
+            <element signature="e#1239#1240#0" expanded="false" />
+            <element signature="e#1269#1270#0" expanded="false" />
+            <element signature="e#1316#1317#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
+            <element signature="e#1386#1387#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1458#1459#0" expanded="false" />
+            <element signature="e#1494#1495#0" expanded="false" />
+            <element signature="e#1531#1532#0" expanded="false" />
+            <element signature="e#1563#1564#0" expanded="false" />
+            <element signature="e#1614#1615#0" expanded="false" />
+            <element signature="e#1656#1657#0" expanded="false" />
+            <element signature="e#1696#1697#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1788#1789#0" expanded="false" />
+            <element signature="e#1836#1837#0" expanded="false" />
             <marker date="1521246461867" expanded="true" signature="1956:2043" ph="INSERT INTO posada... " />
             <marker date="1521246461867" expanded="true" signature="2089:2171" ph="UPDATE posada... " />
           </folding>
@@ -1565,26 +1566,26 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9005#9006#0" expanded="true" />
-            <element signature="e#9034#9035#0" expanded="true" />
-            <element signature="e#9078#9079#0" expanded="true" />
-            <element signature="e#9114#9115#0" expanded="true" />
-            <element signature="e#9151#9152#0" expanded="true" />
-            <element signature="e#9184#9185#0" expanded="true" />
-            <element signature="e#9236#9237#0" expanded="true" />
-            <element signature="e#9280#9281#0" expanded="true" />
-            <element signature="e#9313#9314#0" expanded="true" />
-            <element signature="e#9342#9343#0" expanded="true" />
-            <element signature="e#9386#9387#0" expanded="true" />
-            <element signature="e#9422#9423#0" expanded="true" />
-            <element signature="e#9455#9456#0" expanded="true" />
-            <element signature="e#9484#9485#0" expanded="true" />
-            <element signature="e#9528#9529#0" expanded="true" />
-            <element signature="e#9564#9565#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
-            <element signature="e#9626#9627#0" expanded="true" />
-            <element signature="e#9670#9671#0" expanded="true" />
-            <element signature="e#9706#9707#0" expanded="true" />
+            <element signature="e#12273#12274#0" expanded="true" />
+            <element signature="e#12302#12303#0" expanded="true" />
+            <element signature="e#12346#12347#0" expanded="true" />
+            <element signature="e#12382#12383#0" expanded="true" />
+            <element signature="e#12419#12420#0" expanded="true" />
+            <element signature="e#12452#12453#0" expanded="true" />
+            <element signature="e#12504#12505#0" expanded="true" />
+            <element signature="e#12548#12549#0" expanded="true" />
+            <element signature="e#12581#12582#0" expanded="true" />
+            <element signature="e#12610#12611#0" expanded="true" />
+            <element signature="e#12654#12655#0" expanded="true" />
+            <element signature="e#12690#12691#0" expanded="true" />
+            <element signature="e#12723#12724#0" expanded="true" />
+            <element signature="e#12752#12753#0" expanded="true" />
+            <element signature="e#12796#12797#0" expanded="true" />
+            <element signature="e#12832#12833#0" expanded="true" />
+            <element signature="e#12865#12866#0" expanded="true" />
+            <element signature="e#12894#12895#0" expanded="true" />
+            <element signature="e#12938#12939#0" expanded="true" />
+            <element signature="e#12974#12975#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1638,74 +1639,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/transporte/Ruta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="51" column="9" lean-forward="false" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
-            <element signature="e#2552#2553#0" expanded="true" />
-            <element signature="e#2596#2597#0" expanded="true" />
-            <element signature="e#2632#2633#0" expanded="true" />
-            <element signature="e#2669#2670#0" expanded="true" />
-            <element signature="e#2701#2702#0" expanded="true" />
-            <element signature="e#2752#2753#0" expanded="true" />
-            <element signature="e#2794#2795#0" expanded="true" />
-            <element signature="e#2822#2823#0" expanded="true" />
-            <element signature="e#2849#2850#0" expanded="true" />
-            <element signature="e#2886#2887#0" expanded="true" />
-            <element signature="e#2918#2919#0" expanded="true" />
-            <element signature="e#2950#2951#0" expanded="true" />
-            <element signature="e#2979#2980#0" expanded="true" />
-            <element signature="e#3022#3023#0" expanded="true" />
-            <element signature="e#3058#3059#0" expanded="true" />
-            <element signature="e#3088#3089#0" expanded="true" />
-            <element signature="e#3116#3117#0" expanded="true" />
-            <element signature="e#3156#3157#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-            <marker date="1521304908258" expanded="true" signature="3332:3430" ph="INSERT INTO ruta... " />
-            <marker date="1521304908258" expanded="true" signature="3476:3579" ph="UPDATE ruta... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Posada.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-498">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1204#1205#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#1386#1387#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1563#1564#0" expanded="true" />
-            <element signature="e#1614#1615#0" expanded="true" />
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1696#1697#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-            <element signature="e#1836#1837#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="false" />
+            <element signature="e#1136#1137#0" expanded="false" />
+            <element signature="e#1174#1175#0" expanded="false" />
+            <element signature="e#1204#1205#0" expanded="false" />
+            <element signature="e#1239#1240#0" expanded="false" />
+            <element signature="e#1269#1270#0" expanded="false" />
+            <element signature="e#1316#1317#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
+            <element signature="e#1386#1387#0" expanded="false" />
+            <element signature="e#1415#1416#0" expanded="false" />
+            <element signature="e#1458#1459#0" expanded="false" />
+            <element signature="e#1494#1495#0" expanded="false" />
+            <element signature="e#1531#1532#0" expanded="false" />
+            <element signature="e#1563#1564#0" expanded="false" />
+            <element signature="e#1614#1615#0" expanded="false" />
+            <element signature="e#1656#1657#0" expanded="false" />
+            <element signature="e#1696#1697#0" expanded="false" />
+            <element signature="e#1731#1732#0" expanded="false" />
+            <element signature="e#1788#1789#0" expanded="false" />
+            <element signature="e#1836#1837#0" expanded="false" />
             <marker date="1521246461867" expanded="true" signature="1956:2043" ph="INSERT INTO posada... " />
             <marker date="1521246461867" expanded="true" signature="2089:2171" ph="UPDATE posada... " />
           </folding>
@@ -1718,22 +1677,22 @@
           <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2575#2576#0" expanded="true" />
-            <element signature="e#2601#2602#0" expanded="true" />
-            <element signature="e#2639#2640#0" expanded="true" />
-            <element signature="e#2669#2670#0" expanded="true" />
-            <element signature="e#2702#2703#0" expanded="true" />
-            <element signature="e#2734#2735#0" expanded="true" />
-            <element signature="e#2781#2782#0" expanded="true" />
-            <element signature="e#2823#2824#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2882#2883#0" expanded="true" />
-            <element signature="e#2923#2924#0" expanded="true" />
-            <element signature="e#2959#2960#0" expanded="true" />
-            <element signature="e#3005#3006#0" expanded="true" />
-            <element signature="e#3047#3048#0" expanded="true" />
-            <element signature="e#3118#3119#0" expanded="true" />
-            <element signature="e#3180#3181#0" expanded="true" />
+            <element signature="e#2575#2576#0" expanded="false" />
+            <element signature="e#2601#2602#0" expanded="false" />
+            <element signature="e#2639#2640#0" expanded="false" />
+            <element signature="e#2669#2670#0" expanded="false" />
+            <element signature="e#2702#2703#0" expanded="false" />
+            <element signature="e#2734#2735#0" expanded="false" />
+            <element signature="e#2781#2782#0" expanded="false" />
+            <element signature="e#2823#2824#0" expanded="false" />
+            <element signature="e#2853#2854#0" expanded="false" />
+            <element signature="e#2882#2883#0" expanded="false" />
+            <element signature="e#2923#2924#0" expanded="false" />
+            <element signature="e#2959#2960#0" expanded="false" />
+            <element signature="e#3005#3006#0" expanded="false" />
+            <element signature="e#3047#3048#0" expanded="false" />
+            <element signature="e#3118#3119#0" expanded="false" />
+            <element signature="e#3180#3181#0" expanded="false" />
             <marker date="1521304905450" expanded="true" signature="1268:1304" ph="SELECT * FRO... campamento" />
             <marker date="1521304905450" expanded="true" signature="2053:2140" ph="INSERT INTO campamento... " />
             <marker date="1521304905450" expanded="true" signature="2187:2270" ph="UPDATE campamento... " />
@@ -1757,14 +1716,14 @@
           <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2629#2630#0" expanded="true" />
-            <element signature="e#2661#2662#0" expanded="true" />
-            <element signature="e#2711#2712#0" expanded="true" />
-            <element signature="e#2753#2754#0" expanded="true" />
-            <element signature="e#2783#2784#0" expanded="true" />
-            <element signature="e#2812#2813#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2889#2890#0" expanded="true" />
+            <element signature="e#2629#2630#0" expanded="false" />
+            <element signature="e#2661#2662#0" expanded="false" />
+            <element signature="e#2711#2712#0" expanded="false" />
+            <element signature="e#2753#2754#0" expanded="false" />
+            <element signature="e#2783#2784#0" expanded="false" />
+            <element signature="e#2812#2813#0" expanded="false" />
+            <element signature="e#2853#2854#0" expanded="false" />
+            <element signature="e#2889#2890#0" expanded="false" />
             <marker date="1521304913493" expanded="true" signature="1765:1833" ph="INSERT INTO residencia... " />
             <marker date="1521304913493" expanded="true" signature="1765:1849" ph="INSERT INTO residencia... " />
             <marker date="1521304913493" expanded="true" signature="1895:1962" ph="UPDATE residencia... " />
@@ -1823,48 +1782,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java">
+    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/transporte/Ruta.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="286" column="46" lean-forward="false" selection-start-line="286" selection-start-column="46" selection-end-line="286" selection-end-column="46" />
+        <state relative-caret-position="298">
+          <caret line="177" column="35" lean-forward="true" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9005#9006#0" expanded="true" />
-            <element signature="e#9034#9035#0" expanded="true" />
-            <element signature="e#9078#9079#0" expanded="true" />
-            <element signature="e#9114#9115#0" expanded="true" />
-            <element signature="e#9151#9152#0" expanded="true" />
-            <element signature="e#9184#9185#0" expanded="true" />
-            <element signature="e#9236#9237#0" expanded="true" />
-            <element signature="e#9280#9281#0" expanded="true" />
-            <element signature="e#9313#9314#0" expanded="true" />
-            <element signature="e#9342#9343#0" expanded="true" />
-            <element signature="e#9386#9387#0" expanded="true" />
-            <element signature="e#9422#9423#0" expanded="true" />
-            <element signature="e#9455#9456#0" expanded="true" />
-            <element signature="e#9484#9485#0" expanded="true" />
-            <element signature="e#9528#9529#0" expanded="true" />
-            <element signature="e#9564#9565#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
-            <element signature="e#9626#9627#0" expanded="true" />
-            <element signature="e#9670#9671#0" expanded="true" />
-            <element signature="e#9706#9707#0" expanded="true" />
+            <element signature="e#3034#3035#0" expanded="true" />
+            <element signature="e#3063#3064#0" expanded="true" />
+            <element signature="e#3107#3108#0" expanded="true" />
+            <element signature="e#3143#3144#0" expanded="true" />
+            <element signature="e#3180#3181#0" expanded="true" />
+            <element signature="e#3212#3213#0" expanded="true" />
+            <element signature="e#3263#3264#0" expanded="true" />
+            <element signature="e#3305#3306#0" expanded="true" />
+            <element signature="e#3333#3334#0" expanded="true" />
+            <element signature="e#3360#3361#0" expanded="true" />
+            <element signature="e#3397#3398#0" expanded="true" />
+            <element signature="e#3429#3430#0" expanded="true" />
+            <element signature="e#3459#3460#0" expanded="true" />
+            <element signature="e#3488#3489#0" expanded="true" />
+            <element signature="e#3529#3530#0" expanded="true" />
+            <element signature="e#3565#3566#0" expanded="true" />
+            <element signature="e#3595#3596#0" expanded="true" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3663#3664#0" expanded="true" />
+            <element signature="e#3697#3698#0" expanded="true" />
+            <marker date="1521534541502" expanded="true" signature="3819:3927" ph="INSERT INTO ruta... " />
+            <marker date="1521534541502" expanded="true" signature="3973:4076" ph="UPDATE ruta... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/hospedaje/Hospedaje.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="221">
+          <caret line="77" column="19" lean-forward="false" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Turismo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="368" column="51" lean-forward="false" selection-start-line="368" selection-start-column="51" selection-end-line="368" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#12273#12274#0" expanded="true" />
+            <element signature="e#12302#12303#0" expanded="true" />
+            <element signature="e#12346#12347#0" expanded="true" />
+            <element signature="e#12382#12383#0" expanded="true" />
+            <element signature="e#12419#12420#0" expanded="true" />
+            <element signature="e#12452#12453#0" expanded="true" />
+            <element signature="e#12504#12505#0" expanded="true" />
+            <element signature="e#12548#12549#0" expanded="true" />
+            <element signature="e#12581#12582#0" expanded="true" />
+            <element signature="e#12610#12611#0" expanded="true" />
+            <element signature="e#12654#12655#0" expanded="true" />
+            <element signature="e#12690#12691#0" expanded="true" />
+            <element signature="e#12723#12724#0" expanded="true" />
+            <element signature="e#12752#12753#0" expanded="true" />
+            <element signature="e#12796#12797#0" expanded="true" />
+            <element signature="e#12832#12833#0" expanded="true" />
+            <element signature="e#12865#12866#0" expanded="true" />
+            <element signature="e#12894#12895#0" expanded="true" />
+            <element signature="e#12938#12939#0" expanded="true" />
+            <element signature="e#12974#12975#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/usuario/Cliente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2198">
-          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+        <state relative-caret-position="286">
+          <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3859#3860#0" expanded="true" />
@@ -1904,6 +1897,16 @@
             <marker date="1521500884787" expanded="true" signature="2011:2048" ph="SELECT * FRO... clientes" />
             <marker date="1521500884787" expanded="true" signature="3062:3189" ph="INSERT INTO clientes... " />
             <marker date="1521500884787" expanded="true" signature="3235:3357" ph="UPDATE clientes... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ve/edu/uc/facyt/turismo/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="52" column="47" lean-forward="true" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

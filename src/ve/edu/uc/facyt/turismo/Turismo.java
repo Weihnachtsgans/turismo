@@ -1,6 +1,7 @@
 package ve.edu.uc.facyt.turismo;
 
 
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 import ve.edu.uc.facyt.turismo.usuario.Proveedor;
 import ve.edu.uc.facyt.turismo.usuario.Cliente;
 import ve.edu.uc.facyt.turismo.transporte.Ruta;
@@ -10,6 +11,8 @@ import ve.edu.uc.facyt.turismo.hospedaje.Hospedaje;
 import ve.edu.uc.facyt.turismo.hospedaje.Campamento;
 
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.UUID;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -157,9 +160,74 @@ public class Turismo {
         return c;
     }
 
-    private void createHospedaje(Connection conn){
+    private void reportMenu(Connection conn){
+        Scanner inn = new Scanner(System.in);
+        int option;
+        System.out.println("¿Qué desea hacer, administrador?");
+        System.out.println("1 - Total de visitas por destino");
+        System.out.println("2 - Proveedores de transporte de empresa");
+        System.out.println("3 - Proveedores de residencia de empresa");
+        System.out.println("4 - salir");
+        do{
+            option = inn.nextInt();
+            if(option == 4)
+                return;
+        }while (option < 0 || option > 4);
 
     }
+
+    private void createHospedaje(Connection conn){
+        System.out.println("Ingrese los siguientes datos separados por un \";\"");
+        System.out.println("precio, rif, dirección");
+        Scanner inn = new Scanner(System.in);
+        String value = inn.nextLine();
+        String[] values = value.split(";");
+        try {
+            Hospedaje h = new Hospedaje(Integer.parseInt(values[0]),values[1],values[2]);
+            h.save(conn);
+        }
+        catch (SQLException e){
+            System.out.println(e.toString());
+            System.out.println("No se pudo registrar el hospedaje");
+        }
+    }
+
+    private void createTransporte(Connection conn){
+        System.out.println("Ingrese los siguientes datos separados por un \";\"");
+        System.out.println("id ruta, origen, destino, nombre organización, tipo, distancia, cupo,precio,fecha");
+        Scanner inn = new Scanner(System.in);
+        String value = inn.nextLine();
+        String[] values = value.split(";");
+        SimpleDateFormat f = new SimpleDateFormat("ddmmyyyy");
+        Date parsed = null;
+        System.out.println(values[0]);
+        System.out.println(values[1]);
+        System.out.println(values[2]);
+        System.out.println(values[3]);
+        System.out.println(values[4]);
+        System.out.println(values[5]);
+        System.out.println(values[6]);
+        System.out.println(values[7]);
+        System.out.println(values[8]);
+        try {
+            parsed = f.parse(values[8]);
+        }catch (Exception e){
+            System.out.println("fecha invalida");
+        }
+        java.sql.Date fecha = new java.sql.Date(parsed.getTime());
+        int precio = Integer.parseInt(values[7]);
+        int cupo = Integer.parseInt(values[6]);
+        Integer distancia = Integer.parseInt(values[5]);
+        try{
+            Ruta r = new Ruta(values[0],values[1],values[2],values[3],values[4],distancia,cupo,precio,fecha);
+            r.save(conn);
+        }catch (SQLException e){
+            System.out.println(e.toString());
+            System.out.println("No se pudo registrar la ruta");
+        }
+    }
+
+
 
     /**
      * Interfaz para el menu del administrador
@@ -167,20 +235,34 @@ public class Turismo {
      */
 
     private void showAdminMainMenu(Cliente c,Connection conn){
-        Scanner inn = new Scanner(System.in);
-        int option;
-        System.out.println("¿Qué desea hacer, administrador?");
-        System.out.println("1 - Ingresar Hospedaje");
-        System.out.println("2 - Ingresar Transporte");
-        System.out.println("3 - Emitir reporte");
-        System.out.println("4 - salir");
-        do{
-            option = inn.nextInt();
-            if(option == 3)
-                System.exit(1);
-        }while(option<0 || option >4);
+        while (true){
+            Scanner inn = new Scanner(System.in);
+            int option;
+            System.out.println("¿Qué desea hacer, administrador?");
+            System.out.println("1 - Ingresar Hospedaje");
+            System.out.println("2 - Ingresar Transporte");
+            System.out.println("3 - Emitir reporte");
+            System.out.println("4 - salir");
+            do{
+                option = inn.nextInt();
+                if(option == 4)
+                    System.exit(1);
+            }while(option<0 || option >4);
+            if(option == 1)
+                createHospedaje(conn);
+            else if(option == 2)
+                createTransporte(conn);
+            else
+                reportMenu(conn);
+        }
+
     }
 
+    /**
+     * Cambiar datos del usuario
+     * @param c
+     * @param conn
+     */
     private void handleChangeData(Cliente c, Connection conn){
         String[] opciones = {"ciudad","contraseña","estado","nacionalidad","nombre","estado civil"};
         while (true){
@@ -281,6 +363,12 @@ public class Turismo {
         }while(c == null && !exit);
         if(!exit) {
             if (c.isAdmin()) {
+                try{
+                    conn.close();
+                }catch (Exception e){
+                    System.out.println(e.toString());
+                }
+
                 app.setDbUser("admin_turismo");
                 app.setDbPassword("contraseña muy segura");
                 conn = app.connect();

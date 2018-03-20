@@ -1,6 +1,7 @@
 package ve.edu.uc.facyt.turismo;
 
 import java.sql.*;
+import java.util.Date;
 import java.util.List;
 
 public class Model {
@@ -48,11 +49,24 @@ public class Model {
             else if(ob.getClass() == int.class){
                 stmt.setInt(index,(int)ob);
             }
+            else if(ob.getClass() == Integer.class){
+                stmt.setInt(index,(Integer)ob);
+            }
             else if(ob.getClass() == Boolean.class){
                 stmt.setBoolean(index,(Boolean)ob);
             }
             else if(ob.getClass() == float.class){
                 stmt.setFloat(index,(float)ob);
+            }
+            else if(ob.getClass() == java.sql.Date.class){
+                Date temp = (Date)ob;
+                java.sql.Date t = new java.sql.Date(temp.getTime());
+                stmt.setDate(index,t);
+            }
+            else if(ob.getClass() == java.util.Date.class){
+                Date temp = (Date)ob;
+                java.sql.Date t = new java.sql.Date(temp.getTime());
+                stmt.setDate(index,t);
             }
             index++;
         }

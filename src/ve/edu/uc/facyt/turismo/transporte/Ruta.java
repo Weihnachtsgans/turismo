@@ -14,11 +14,11 @@ public class Ruta extends Model{
     private String tipo;
     private Integer distancia;
     private int cupo;
-    private float precio;
+    private int precio;
     private Date fecha;
     private boolean isNew = true;
 
-    public Ruta(String idRuta, String origen, String destino, String tipo,int distancia, int cupo, float precio, Date fecha) {
+    public Ruta(String idRuta, String origen, String destino, String tipo,int distancia, int cupo, int precio, Date fecha) {
         this.idRuta = idRuta;
         this.origen = origen;
         this.destino = destino;
@@ -29,16 +29,31 @@ public class Ruta extends Model{
         this.fecha = fecha;
         this.isNew = isNew;
     }
-    private Ruta(String idRuta, String origen, String destino, String tipo, int distancia, int cupo, float precio, Date fecha, boolean isNew) {
+
+
+    private Ruta(String idRuta, String origen, String destino, String nombreL, String tipo, Integer distancia, int cupo, int precio, Date fecha, boolean isNew) {
         this.idRuta = idRuta;
         this.origen = origen;
         this.destino = destino;
+        this.nombreL = nombreL;
         this.tipo = tipo;
         this.distancia = distancia;
         this.cupo = cupo;
         this.precio = precio;
         this.fecha = fecha;
         this.isNew = isNew;
+    }
+
+    public Ruta(String idRuta, String origen, String destino, String nombreL, String tipo, Integer distancia, int cupo, int precio, Date fecha) {
+        this.idRuta = idRuta;
+        this.origen = origen;
+        this.destino = destino;
+        this.nombreL = nombreL;
+        this.tipo = tipo;
+        this.distancia = distancia;
+        this.cupo = cupo;
+        this.precio = precio;
+        this.fecha = fecha;
     }
 
 
@@ -55,10 +70,11 @@ public class Ruta extends Model{
                 rs.getString("id_r"),
                 rs.getString("origen"),
                 rs.getString("destino"),
+                rs.getString("nombre_l"),
                 rs.getString("tipo_l"),
                 rs.getInt("distancia"),
                 rs.getInt("cupo"),
-                rs.getFloat("precio"),
+                rs.getInt("precio"),
                 rs.getDate("fecha"),
                 false
                 );
@@ -114,11 +130,11 @@ public class Ruta extends Model{
         this.cupo = cupo;
     }
 
-    public float getPrecio() {
+    public int getPrecio() {
         return precio;
     }
 
-    public void setPrecio(float precio) {
+    public void setPrecio(int precio) {
         this.precio = precio;
     }
 
@@ -130,13 +146,12 @@ public class Ruta extends Model{
         this.fecha = fecha;
     }
 
-    /** CAMBIAR **/
     public boolean save(Connection c) throws SQLException{
 
         String SQL;
 
         if(isNew){
-            SQL = "INSERT INTO ruta(origen,destino,distancia,nombre_l,tipo_l,cupo,precio,fecha,id_r) VALUES (?,?,?,?)";
+            SQL = "INSERT INTO ruta(origen,destino,distancia,nombre_l,tipo_l,cupo,precio,fecha,id_r) VALUES (?,?,?,?,?,?,?,?,?)";
         }
         else{
             SQL = "UPDATE ruta SET origen=?,destino=?,distancia=?,nombre_l=?,tipo_l=?,cupo=?,precio=?,fecha=? WHERE id_r=?";
@@ -152,7 +167,15 @@ public class Ruta extends Model{
         parameters.add(precio);
         parameters.add(fecha);
         parameters.add(idRuta);
-
+        System.out.println(origen);
+        System.out.println(destino);
+        System.out.println(distancia);
+        System.out.println(nombreL);
+        System.out.println(tipo);
+        System.out.println(cupo);
+        System.out.println(precio);
+        System.out.println(fecha);
+        System.out.println(idRuta);
         return Ruta.executePostQuery(SQL,parameters,c);
     }
 }
