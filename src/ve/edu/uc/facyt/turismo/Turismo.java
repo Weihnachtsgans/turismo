@@ -1,7 +1,5 @@
 package ve.edu.uc.facyt.turismo;
 
-
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 import ve.edu.uc.facyt.turismo.usuario.Proveedor;
 import ve.edu.uc.facyt.turismo.usuario.Cliente;
 import ve.edu.uc.facyt.turismo.transporte.Ruta;
@@ -185,6 +183,7 @@ public class Turismo {
         try {
             Hospedaje h = new Hospedaje(Integer.parseInt(values[0]),values[1],values[2]);
             h.save(conn);
+            System.out.println("¡Hospedaje creado con éxito!");
         }
         catch (SQLException e){
             System.out.println(e.toString());
@@ -200,15 +199,6 @@ public class Turismo {
         String[] values = value.split(";");
         SimpleDateFormat f = new SimpleDateFormat("ddmmyyyy");
         Date parsed = null;
-        System.out.println(values[0]);
-        System.out.println(values[1]);
-        System.out.println(values[2]);
-        System.out.println(values[3]);
-        System.out.println(values[4]);
-        System.out.println(values[5]);
-        System.out.println(values[6]);
-        System.out.println(values[7]);
-        System.out.println(values[8]);
         try {
             parsed = f.parse(values[8]);
         }catch (Exception e){
@@ -221,6 +211,7 @@ public class Turismo {
         try{
             Ruta r = new Ruta(values[0],values[1],values[2],values[3],values[4],distancia,cupo,precio,fecha);
             r.save(conn);
+            System.out.println("¡Transporte creado con éxito!")
         }catch (SQLException e){
             System.out.println(e.toString());
             System.out.println("No se pudo registrar la ruta");
