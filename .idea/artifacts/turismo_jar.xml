@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="turismo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/turismo_jar</output-path>
+    <root id="archive" name="turismo.jar">
+      <element id="module-output" name="turismo" />
+      <element id="extracted-dir" path="$USER_HOME$/Programming/Java/dbtest/lib/postgresql-42.2.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

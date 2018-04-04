@@ -211,7 +211,7 @@ public class Turismo {
         try{
             Ruta r = new Ruta(values[0],values[1],values[2],values[3],values[4],distancia,cupo,precio,fecha);
             r.save(conn);
-            System.out.println("¡Transporte creado con éxito!")
+            System.out.println("¡Transporte creado con éxito!");
         }catch (SQLException e){
             System.out.println(e.toString());
             System.out.println("No se pudo registrar la ruta");
