@@ -1,5 +1,6 @@
 package ve.edu.uc.facyt.turismo;
 
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 import ve.edu.uc.facyt.turismo.usuario.Proveedor;
 import ve.edu.uc.facyt.turismo.usuario.Cliente;
 import ve.edu.uc.facyt.turismo.transporte.Ruta;
@@ -9,12 +10,10 @@ import ve.edu.uc.facyt.turismo.hospedaje.Hospedaje;
 import ve.edu.uc.facyt.turismo.hospedaje.Campamento;
 
 
+import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.UUID;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.Scanner;
 
 /**
@@ -158,6 +157,53 @@ public class Turismo {
         return c;
     }
 
+    private void destinationVisits(Connection conn){
+        String SQL = "SELECT nombre_destino, COUNT(nombre_destino) as ct from visita GROUP BY nombre_destino";
+        try{
+            Statement stmt = conn.createStatement();
+            ResultSet res = stmt.executeQuery(SQL);
+            if(!res.isBeforeFirst()){
+                System.out.println("No se han encontrado visitas");
+            }
+            while(res.next()){
+                System.out.println(String.format("%s %d",res.getString("nombre_destino"),res.getInt("ct")));
+            }
+        }catch (SQLException e){
+            System.out.println("ocurrió " + e.toString());
+        }
+
+    }
+    private void printTransport(Connection conn){
+        Scanner inn = new Scanner(System.in);
+        System.out.println("Ingrese el nombre de la compañía");
+        String company = inn.nextLine();
+        String SQL = String.format("select id_proveedor,nombre_p,count(id_proveedor) from (select id_proveedor, nombre_p from(select id_proveedor,nombre_p,id_r from (select id_proveedor, nombre_p,ruta.id_r from proveedor inner join ruta on proveedor.id_proveedor = ruta.rif_proveedor) as t1 inner join plan_transporte on t1.id_r = plan_transporte.id_transporte) as t2 join contrata on contrata.id_trasporte =t2.id_r join cliente on contrata.id_cliente = cliente.id_cliente and cliente.nombre_c = '%s') as t3 group by id_proveedor,nombre_p;",company);
+        process_report_query(conn, SQL);
+    }
+
+    private void process_report_query(Connection conn, String SQL) {
+        try{
+            Statement stmt = conn.createStatement();
+            ResultSet res = stmt.executeQuery(SQL);
+            if(!res.isBeforeFirst()){
+                System.out.println("No se han encontrado contrataciones");
+            }
+            while(res.next()){
+                System.out.println(String.format("%s %s %d",res.getString("id_proveedor"),res.getString("nombre_p"),res.getInt("ct")));
+            }
+        }catch (SQLException e){
+            System.out.println("ocurrió " + e.toString());
+        }
+    }
+
+    private void printResidence(Connection conn){
+        Scanner inn = new Scanner(System.in);
+        System.out.println("Ingrese el nombre de la compañía");
+        String company = inn.nextLine();
+        String SQL = String.format("select id_proveedor,nombre_p,count(nombre_p) as ct from (select id_proveedor,nombre_p from (select id_proveedor,nombre_p from proveedor inner join reserva on reserva.rif = proveedor.id_proveedor) as t1 inner join cliente on cliente.id_cliente = id_cliente and cliente.nombre_c = %s) as t2 group by id_proveedor,nombre_p",company);
+        process_report_query(conn, SQL);
+    }
+
     private void reportMenu(Connection conn){
         Scanner inn = new Scanner(System.in);
         int option;
@@ -171,7 +217,12 @@ public class Turismo {
             if(option == 4)
                 return;
         }while (option < 0 || option > 4);
-
+        if(option == 1)
+            destinationVisits(conn);
+        else if(option == 2)
+            printTransport(conn);
+        else if(option == 3)
+            printResidence(conn);
     }
 
     private void createHospedaje(Connection conn){
