@@ -177,7 +177,7 @@ public class Turismo {
         Scanner inn = new Scanner(System.in);
         System.out.println("Ingrese el nombre de la compañía");
         String company = inn.nextLine();
-        String SQL = String.format("select id_proveedor,nombre_p,count(id_proveedor) from (select id_proveedor, nombre_p from(select id_proveedor,nombre_p,id_r from (select id_proveedor, nombre_p,ruta.id_r from proveedor inner join ruta on proveedor.id_proveedor = ruta.rif_proveedor) as t1 inner join plan_transporte on t1.id_r = plan_transporte.id_transporte) as t2 join contrata on contrata.id_trasporte =t2.id_r join cliente on contrata.id_cliente = cliente.id_cliente and cliente.nombre_c = '%s') as t3 group by id_proveedor,nombre_p;",company);
+        String SQL = String.format("select id_proveedor,nombre_p,count(id_proveedor) as ct from (select id_proveedor, nombre_p from(select id_proveedor,nombre_p,id_r from (select id_proveedor, nombre_p,ruta.id_r from proveedor inner join ruta on proveedor.id_proveedor = ruta.rif_proveedor) as t1 inner join plan_transporte on t1.id_r = plan_transporte.id_transporte) as t2 join contrata on contrata.id_trasporte =t2.id_r join cliente on contrata.id_cliente = cliente.id_cliente and cliente.nombre_c = '%s') as t3 group by id_proveedor,nombre_p;",company);
         process_report_query(conn, SQL);
     }
 
