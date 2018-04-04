@@ -200,7 +200,7 @@ public class Turismo {
         Scanner inn = new Scanner(System.in);
         System.out.println("Ingrese el nombre de la compañía");
         String company = inn.nextLine();
-        String SQL = String.format("select id_proveedor,nombre_p,count(nombre_p) as ct from (select id_proveedor,nombre_p from (select id_proveedor,nombre_p from proveedor inner join reserva on reserva.rif = proveedor.id_proveedor) as t1 inner join cliente on cliente.id_cliente = id_cliente and cliente.nombre_c = %s) as t2 group by id_proveedor,nombre_p",company);
+        String SQL = String.format("select id_proveedor,nombre_p,count(nombre_p) as ct from (select id_proveedor,nombre_p from (select id_proveedor,nombre_p from proveedor inner join reserva on reserva.rif = proveedor.id_proveedor) as t1 inner join cliente on cliente.id_cliente = id_cliente and cliente.nombre_c = '%s') as t2 group by id_proveedor,nombre_p",company);
         process_report_query(conn, SQL);
     }
 
